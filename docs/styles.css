@@ -1,0 +1,68 @@
+@font-face {
+  font-family: LatoBlack;
+  src: url(fonts/Lato-Black.ttf), url(fonts/Lato-Black.svg), url(fonts/Lato-Black.woff);
+}
+@font-face {
+  font-family: LatoLight;
+  src: url(fonts/Lato-Light.ttf), url(fonts/Lato-Light.svg), url(fonts/Lato-Light.woff);
+}
+body {
+  text-align: center;
+  font-family: LatoBlack;
+}
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #4f4f4f;
+}
+.standard-buttons__table {
+  display: table;
+  text-align: center;
+  border-collapse: collapse;
+  border-width: 0;
+  margin: 3.89rem auto 0 auto;
+}
+ul {
+  display: table-row;
+}
+li {
+  display: table-cell;
+}
+li button {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.67rem;
+  width: 6.5rem;
+  height: 1.778rem;
+  border-radius: 0.28rem;
+  border-width: 0;
+  margin: 0.556rem 0.639rem;
+}
+.standard-buttons__table_little {
+  width: 4.33rem;
+  height: 1.278rem;
+  font-size: 0.56rem;
+}
+li:first-of-type button,
+li:nth-of-type(2) button {
+  background-color: #4eb7a8;
+}
+li:last-of-type button,
+li:nth-of-type(3) button {
+  background-color: #e75735;
+}
+li button:active {
+  background-color: #fff;
+}
+li:first-of-type button:active,
+li:nth-of-type(2) button:active {
+  color: #4eb7a8;
+}
+li:last-of-type button:active,
+li:nth-of-type(3) button:active {
+  color: #e75735;
+}
+mixin form-elements() div.form-elements {
+  h1: Form elements;
+}
