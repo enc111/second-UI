@@ -27,6 +27,7 @@ ul {
 }
 li {
   display: table-cell;
+  vertical-align: bottom;
 }
 li button {
   color: #fff;
@@ -62,7 +63,4 @@ li:nth-of-type(2) button:active {
 li:last-of-type button:active,
 li:nth-of-type(3) button:active {
   color: #e75735;
-}
-mixin form-elements() div.form-elements {
-  h1: Form elements;
 }
