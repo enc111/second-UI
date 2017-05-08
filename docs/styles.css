@@ -15,6 +15,9 @@ h1 {
   text-transform: uppercase;
   color: #4f4f4f;
 }
+.standard-buttons h1 {
+  margin-top: 4.72rem;
+}
 .standard-buttons__table {
   display: table;
   text-align: center;
@@ -37,7 +40,7 @@ li button {
   width: 6.5rem;
   height: 1.778rem;
   border-radius: 0.28rem;
-  border-width: 0;
+  border: none;
   margin: 0.556rem 0.639rem;
 }
 .standard-buttons__table_little {
@@ -48,10 +51,12 @@ li button {
 li:first-of-type button,
 li:nth-of-type(2) button {
   background-color: #4eb7a8;
+  box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
 }
 li:last-of-type button,
 li:nth-of-type(3) button {
   background-color: #e75735;
+  box-shadow: 0 0 0 1px #bf3e1f, 0 0.2rem 0 1px #bf3e1f;
 }
 li button:active {
   background-color: #fff;
@@ -59,8 +64,14 @@ li button:active {
 li:first-of-type button:active,
 li:nth-of-type(2) button:active {
   color: #4eb7a8;
+  box-shadow: 0 0 0 1px #4eb7a8, 0 0.2rem 0 1px #4eb7a8;
 }
 li:last-of-type button:active,
 li:nth-of-type(3) button:active {
   color: #e75735;
+  box-shadow: 0 0 0 1px #e75735, 0 0.2rem 0 1px #e75735;
+}
+li button:hover {
+  box-shadow: none;
+  border: none;
 }
