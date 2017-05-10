@@ -1,6 +1,13 @@
 arrow-std-color=#ffffff
 arrow-circle-color=#e5e5e5
 
+transform(action1, acttion2)
+  -moz-transform action1 acttion2
+  -ms-transform action1 acttion2
+  -webkit-transform action1 acttion2
+  -o-transform action1 acttion2
+  transform action1 acttion2
+
 circle(n, color)
   width n
   height n
@@ -11,10 +18,10 @@ arrow(size, degr, vert, color = #ffffff)
   border size solid transparent
   border-left size solid color
   border-top size solid color
-  transform translateY(vert) rotate(degr)
+  transform translateY(vert), rotate(degr)
 
 .arrow-buttons h1
-  margin 2.5rem 0 2.056rem 0
+  margin 2.5rem auto 2.056rem auto
 .arrow-buttons__circle
   display inline-block
   circle 2.89rem arrow-circle-color

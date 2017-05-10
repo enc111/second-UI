@@ -76,7 +76,7 @@ li button:hover {
   border: none;
 }
 .arrow-buttons h1 {
-  margin: 2.5rem 0 2.056rem 0;
+  margin: 2.5rem auto 2.056rem auto;
 }
 .arrow-buttons__circle {
   display: inline-block;
@@ -110,6 +110,10 @@ li button:hover {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #fff;
   border-top: 0.278rem solid #fff;
+  -moz-transform: translateY(80%) rotate(-45deg);
+  -ms-transform: translateY(80%) rotate(-45deg);
+  -webkit-transform: translateY(80%) rotate(-45deg);
+  -o-transform: translateY(80%) rotate(-45deg);
   transform: translateY(80%) rotate(-45deg);
   margin-left: 40%;
 }
@@ -117,12 +121,20 @@ li button:hover {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #4eb7a8;
   border-top: 0.278rem solid #4eb7a8;
+  -moz-transform: translateY(65%) rotate(-45deg);
+  -ms-transform: translateY(65%) rotate(-45deg);
+  -webkit-transform: translateY(65%) rotate(-45deg);
+  -o-transform: translateY(65%) rotate(-45deg);
   transform: translateY(65%) rotate(-45deg);
 }
 .arrow-buttons__circle_arrow-right {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #fff;
   border-top: 0.278rem solid #fff;
+  -moz-transform: translateY(80%) rotate(135deg);
+  -ms-transform: translateY(80%) rotate(135deg);
+  -webkit-transform: translateY(80%) rotate(135deg);
+  -o-transform: translateY(80%) rotate(135deg);
   transform: translateY(80%) rotate(135deg);
   margin-left: 20%;
 }
@@ -130,5 +142,9 @@ li button:hover {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #4eb7a8;
   border-top: 0.278rem solid #4eb7a8;
+  -moz-transform: translateY(65%) rotate(135deg);
+  -ms-transform: translateY(65%) rotate(135deg);
+  -webkit-transform: translateY(65%) rotate(135deg);
+  -o-transform: translateY(65%) rotate(135deg);
   transform: translateY(65%) rotate(135deg);
 }
