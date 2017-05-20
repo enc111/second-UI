@@ -152,9 +152,9 @@ li button:hover {
   display: inline-block;
   width: 5.44rem;
   height: 5.44rem;
-  position: relative;
-  background-color: #fff;
   border-radius: 50%;
+  background-color: #fff;
+  position: relative;
   background-image: linear-gradient(to right, transparent 50%, #e75735 0);
   font-family: LatoLight;
   margin-right: 2.06rem;
