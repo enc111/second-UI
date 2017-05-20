@@ -148,6 +148,9 @@ li button:hover {
   -o-transform: translateY(65%) rotate(135deg);
   transform: translateY(65%) rotate(135deg);
 }
+.percentages h1 {
+  margin: 2.278rem auto 1.39rem auto;
+}
 .pie {
   display: inline-block;
   width: 5.44rem;
@@ -186,6 +189,9 @@ li button:hover {
   font-size: 2.22rem;
   text-align: center;
   line-height: 4.48rem;
+}
+.pie-chart {
+  display: inline-block;
 }
 @-moz-keyframes spin {
   to {
