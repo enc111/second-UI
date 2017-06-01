@@ -2,6 +2,7 @@
 Для работы необхдимо запустить webpack в диретории проекта (где расположен файл webpack.config.js) и открыть после этого в браузере html-страницу из папки docs (для github pages). Директории node-modules нет, для работы необходимо установить локально:
 
     webpack;
+    jquery;
     html-webpack-plugin;
     pug-loader;
     pug;
