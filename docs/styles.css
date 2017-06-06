@@ -1,4 +1,41 @@
-@font-face {
+.circliful .outer {
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 19.8;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+/* full circle 25 empty 534 */
+.circliful .inner {
+    fill: transparent;
+    stroke: orange;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+    stroke-dashoffset: 0;
+}
+
+.circliful {
+    overflow: visible !important;
+
+}
+
+.svg-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+svg .icon {
+    font-family: FontAwesome;
+}@font-face {
   font-family: LatoBlack;
   src: url(fonts/Lato-Black.ttf), url(fonts/Lato-Black.svg), url(fonts/Lato-Black.woff);
 }
@@ -192,6 +229,11 @@ li button:hover {
 }
 .pie-chart {
   display: inline-block;
+}
+.multi-pie-chart {
+  display: inline-block;
+  width: 98px;
+  height: 98px;
 }
 @-moz-keyframes spin {
   to {

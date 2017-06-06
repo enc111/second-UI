@@ -54,5 +54,6 @@ module.exports = {
                     test: /\.(css|png|jpg|svg|ttf|otf|eot|woff|woff2)$/,
                     loader: 'file-loader?name=[path][name].[ext]'
                 }]
-        }
+        },
+        externals: ['$']
     };
