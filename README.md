@@ -10,7 +10,8 @@
     7. stylus;
     8. file-loader;
     9. css-loader;
-    10. extract-text-webpack-plugin.
+    10. extract-text-webpack-plugin;
+    11. style-loader.
 
 Структура
 
