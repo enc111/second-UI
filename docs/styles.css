@@ -70,6 +70,8 @@ li {
   vertical-align: bottom;
 }
 li button {
+  overflow: hidden;
+  position: relative;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -95,22 +97,79 @@ li:nth-of-type(3) button {
   background-color: #e75735;
   box-shadow: 0 0 0 1px #bf3e1f, 0 0.2rem 0 1px #bf3e1f;
 }
-li button:active {
+li button:hover {
   background-color: #fff;
 }
-li:first-of-type button:active,
-li:nth-of-type(2) button:active {
+li:first-of-type button:hover,
+li:nth-of-type(2) button:hover {
   color: #4eb7a8;
-  box-shadow: 0 0 0 1px #4eb7a8, 0 0.2rem 0 1px #4eb7a8;
+}
+li:last-of-type button:hover,
+li:nth-of-type(3) button:hover {
+  color: #e75735;
 }
 li:last-of-type button:active,
 li:nth-of-type(3) button:active {
-  color: #e75735;
-  box-shadow: 0 0 0 1px #e75735, 0 0.2rem 0 1px #e75735;
+  background-color: #e75735;
+  color: #fff;
 }
-li button:hover {
+li:first-of-type button:active,
+li:nth-of-type(2) button:active {
+  background-color: #4eb7a8;
+  color: #fff;
+}
+li button:active {
   box-shadow: none;
   border: none;
+  cursor: pointer;
+}
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  animation: ripple-animation 2s;
+}
+@-moz-keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@-o-keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 .arrow-buttons h1 {
   margin: 2.5rem auto 2.056rem auto;
@@ -195,37 +254,8 @@ li button:hover {
   border-radius: 50%;
   background-color: #fff;
   position: relative;
-  background-image: linear-gradient(to right, transparent 50%, #e75735 0);
   font-family: LatoLight;
   margin-right: 2.06rem;
-}
-.pie::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0/50%;
-  background-color: inherit;
-  transform-origin: left;
-  animation: spin 50s linear infinite, bg 100s step-end infinite;
-  animation-play-state: paused;
-  animation-delay: inherit;
-}
-.pie::after {
-  content: attr(id);
-  position: absolute;
-  top: 6%;
-  left: 6%;
-  width: 88%;
-  height: 88%;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #9d9d9d;
-  font-size: 2.22rem;
-  text-align: center;
-  line-height: 4.48rem;
 }
 .pie-chart {
   display: inline-block;
@@ -235,43 +265,7 @@ li button:hover {
   width: 98px;
   height: 98px;
 }
-@-moz-keyframes spin {
-  to {
-    transform: rotate(0.5turn);
-  }
-}
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(0.5turn);
-  }
-}
-@-o-keyframes spin {
-  to {
-    transform: rotate(0.5turn);
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(0.5turn);
-  }
-}
-@-moz-keyframes bg {
-  50% {
-    background-color: #e75735;
-  }
-}
-@-webkit-keyframes bg {
-  50% {
-    background-color: #e75735;
-  }
-}
-@-o-keyframes bg {
-  50% {
-    background-color: #e75735;
-  }
-}
-@keyframes bg {
-  50% {
-    background-color: #e75735;
-  }
+.chart {
+  width: 100px;
+  height: 100px;
 }

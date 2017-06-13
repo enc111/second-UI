@@ -20,6 +20,8 @@ li
   vertical-align bottom
 
 li button
+  overflow hidden
+  position relative
   color #ffffff
   text-transform uppercase
   font-weight bold
@@ -45,20 +47,45 @@ li:nth-of-type(3) button
   background-color second-color
   button-shadow 0.2rem second-border-color
 
-li button:active
+li button:hover
   background-color #ffffff
 
-li:first-of-type button:active
-li:nth-of-type(2) button:active
+li:first-of-type button:hover
+li:nth-of-type(2) button:hover
   color first-color
-  button-shadow 0.2rem first-color
+
+li:last-of-type button:hover
+li:nth-of-type(3) button:hover
+  color second-color
 
 li:last-of-type button:active
 li:nth-of-type(3) button:active
-  color second-color
-  button-shadow 0.2rem second-color
+  background-color second-color
+  color #ffffff
 
-li button:hover
+li:first-of-type button:active
+li:nth-of-type(2) button:active
+  background-color first-color
+  color #ffffff
+
+li button:active
   box-shadow none
   border none
+  cursor pointer
 
+
+.ripple-effect
+  position absolute
+  border-radius 50%
+  width: 50px//////////////
+  height: 50px////////////////////
+  background white
+  animation ripple-animation 2s
+
+@keyframes ripple-animation
+  from
+    transform scale(1)
+    opacity 0.4
+  to
+    transform scale(2)
+    opacity 0

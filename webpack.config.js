@@ -26,7 +26,12 @@ module.exports = {
                 filename: 'index.html',
                 template: 'main.pug'
             }),
-            new ExtractTextPlugin('styles.css')
+            new ExtractTextPlugin('styles.css'),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+                "window.jquery": "jquery"
+            })
         ],
 
         resolve: {
@@ -54,6 +59,5 @@ module.exports = {
                     test: /\.(css|png|jpg|svg|ttf|otf|eot|woff|woff2)$/,
                     loader: 'file-loader?name=[path][name].[ext]'
                 }]
-        },
-        externals: ['$']
+        }
     };
