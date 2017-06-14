@@ -251,11 +251,10 @@ li button:active {
   display: inline-block;
   width: 5.44rem;
   height: 5.44rem;
-  border-radius: 50%;
-  background-color: #fff;
   position: relative;
   font-family: LatoLight;
   margin-right: 2.06rem;
+  background-color: #4eb7a8;
 }
 .pie-chart {
   display: inline-block;
