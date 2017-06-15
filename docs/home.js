@@ -26381,11 +26381,14 @@ __WEBPACK_IMPORTED_MODULE_0_jquery__( document ).ready(function() { // 6,32 5,38
     __WEBPACK_IMPORTED_MODULE_0_jquery__(".percentages .pie").each(function(index) {
             __WEBPACK_IMPORTED_MODULE_0_jquery__("#"+__WEBPACK_IMPORTED_MODULE_0_jquery__(this).attr('id')).circliful({
                 animation: 0,
-                foregroundBorderWidth: 16,
+                foregroundBorderWidth: 80,
                 foregroundColor: '#e75735',
                 backgroundBorderWidth: 0,
                 percent: Number(this.id),
-                percentageTextSize: 25,
+                pointSize: 85,
+			    pointColor: '#ffffff',
+                percentageTextSize: 75,
+                percentageY: 125,
                 noPercentageSign: 1
             });
     })
@@ -39573,7 +39576,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vendor_jquery_circlicful_js__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vendor_jquery_circlicful_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__vendor_jquery_circlicful_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__percentages_doughnut_chart_js__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__percentages_doughnut_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__percentages_doughnut_chart_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__standard_buttons_standard_buttons_ripple_js__ = __webpack_require__(120);
 
 
