@@ -39577,6 +39577,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__vendor_jquery_circlicful_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__vendor_jquery_circlicful_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__percentages_doughnut_chart_js__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__standard_buttons_standard_buttons_ripple_js__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sliders_sliders_js__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sliders_sliders_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__sliders_sliders_js__);
 
 
 
@@ -39585,6 +39587,45 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+
+/***/ }),
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(function() {
+    var el, newPoint, newPlace, offset;
+    $("input[type='range']").change(function() {
+        el = $(this);
+        width = el.width();
+        newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
+        offset = 0;
+        if (newPoint < 0) { newPlace = 0;  }
+        else if (newPoint > 1) { newPlace = width; }
+        else { newPlace = width * newPoint + offset; offset -= newPoint;}
+        el.next("output").css({
+            left: newPlace,
+            marginLeft: offset + "%"
+        }).text(el.val());
+    }).trigger('change');
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ })
 /******/ ]);

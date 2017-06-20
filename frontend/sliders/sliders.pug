@@ -1,3 +1,6 @@
 mixin sliders()
     div.sliders
         h1 Sliders
+        form
+            input(type="range" name="range1" id="range1" min="0" max="100")
+            output(name="rate" id="rate" for="range1")
