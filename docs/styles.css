@@ -298,3 +298,53 @@ output:after {
   margin-left: -0.139rem;
   margin-top: -0.056rem;
 }
+input[type='range'] {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  height: 0.35rem;
+  width: 14.44rem;
+  border-radius: 0.6rem;
+  background: #e5e5e5;
+}
+.sliders__first_range1 {
+  background: #e5e5e5;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+input[type='range']::-moz-range-thumb {
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.sliders__first input[type='range']::-webkit-slider-thumb {
+  width: 1.11rem;
+  height: 1.11rem;
+  border-radius: 50%;
+  background-color: #e75735;
+}
+.sliders__first input[type='range']::-moz-range-thumb {
+  width: 1.11rem;
+  height: 1.11rem;
+  border-radius: 50%;
+  background-color: #e75735;
+}
+.sliders__second input[type='range']::-webkit-slider-thumb {
+  width: 1.11rem;
+  height: 1.11rem;
+  border-radius: 50%;
+  background-color: #4eb7a8;
+}
+.sliders__second input[type='range']::-moz-range-thumb {
+  width: 1.11rem;
+  height: 1.11rem;
+  border-radius: 50%;
+  background-color: #4eb7a8;
+}
+.sliders__first,
+.sliders__second {
+  display: inline-block;
+}

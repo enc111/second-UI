@@ -1,6 +1,11 @@
 mixin sliders()
     div.sliders
         h1 Sliders
-        form
-            input(type="range" name="range1" id="range1" min="0" max="100")
-            output(name="rate" id="rate" for="range1")
+        div.sliders__first
+            form
+                input.sliders__first_range1(type="range" name="range1" id="range1" min="0" max="100")
+                output(name="rate" id="rate" for="range1")
+        div.sliders__second
+            form
+                input.sliders__second_range2(type="range" name="range2" id="range2" min="0" max="100")
+                output(name="rate2" id="rate2" for="range2")

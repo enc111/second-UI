@@ -28,3 +28,41 @@ output:after
   left: 50%
   margin-left: -0.139rem
   margin-top: -0.056rem
+
+input[type='range']
+  appearance none
+  -webkit-appearance none
+  outline none
+  height 0.35rem
+  width 14.44rem
+  border-radius 0.6rem
+  background arrow-circle-color
+
+.sliders__first_range1
+  background arrow-circle-color
+
+input[type='range']::-webkit-slider-thumb
+  -webkit-appearance none
+  outline none
+  cursor pointer
+
+input[type='range']::-moz-range-thumb
+  -webkit-appearance none
+  outline none
+  cursor pointer
+
+.sliders__first input[type='range']::-webkit-slider-thumb
+  circle 1.11rem second-color
+
+.sliders__first input[type='range']::-moz-range-thumb
+  circle 1.11rem second-color
+
+.sliders__second input[type='range']::-webkit-slider-thumb
+  circle 1.11rem first-color
+
+.sliders__second input[type='range']::-moz-range-thumb
+  circle 1.11rem first-color
+
+.sliders__first
+.sliders__second
+  display inline-block
