@@ -26433,7 +26433,7 @@ var multi = new __WEBPACK_IMPORTED_MODULE_1_chart_js___default.a(ctx, {
 
 /* WEBPACK VAR INJECTION */(function($) {$(function() {
     var el, newPoint, newPlace, offset;
-    $("input[type='range']").change(function() {
+    $(".sliders__first_range1").change(function() {
         el = $(this);
         width = el.width();
         newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));

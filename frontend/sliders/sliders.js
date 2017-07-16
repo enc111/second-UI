@@ -1,6 +1,6 @@
 $(function() {
     var el, newPoint, newPlace, offset;
-    $("input[type='range']").change(function() {
+    $(".sliders__first_range1").change(function() {
         el = $(this);
         width = el.width();
         newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
