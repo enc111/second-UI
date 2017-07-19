@@ -12,22 +12,22 @@ form
   color white
   border-radius 0.44rem
   display inline-block
-  font: LatoBlack 0.72rem
-  bottom: 130%
-  left: 0
+  font LatoBlack 0.72rem
+  bottom 130%
+  left 0
 
 .sliders__first output:after
-  content: ""
-  position: absolute
-  width: 0
-  height: 0
-  border-top: 0.278rem solid second-color
-  border-left: 0.139rem solid transparent
-  border-right: 0.139rem solid transparent
-  top: 100%
-  left: 50%
-  margin-left: -0.139rem
-  margin-top: -0.056rem
+  content ""
+  position absolute
+  width 0
+  height 0
+  border-top 0.278rem solid second-color
+  border-left 0.139rem solid transparent
+  border-right 0.139rem solid transparent
+  top 100%
+  left 50%
+  margin-left -0.139rem
+  margin-top -0.056rem
 
 input[type='range']
   appearance none
@@ -64,9 +64,14 @@ input[type='range']::-moz-range-track
   circle 1.11rem first-color
   border none
 
-/*.sliders__second input[type='range']::-moz-range-progress
-  background first-color
-  height 0.35rem*/
+form::after
+  content "0 25 50 75 100"
+  position absolute
+  background transparent
+  word-spacing 2.7rem
+  top 1.2rem
+  left 0rem
+  font-size 0.6rem
 
 .sliders__first
 .sliders__second

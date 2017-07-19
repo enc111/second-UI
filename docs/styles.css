@@ -344,6 +344,15 @@ input[type='range']::-moz-range-track {
   background-color: #4eb7a8;
   border: none;
 }
+form::after {
+  content: "0 25 50 75 100";
+  position: absolute;
+  background: transparent;
+  word-spacing: 2.7rem;
+  top: 1.2rem;
+  left: 0rem;
+  font-size: 0.6rem;
+}
 .sliders__first,
 .sliders__second {
   display: inline-block;
