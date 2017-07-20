@@ -344,16 +344,22 @@ input[type='range']::-moz-range-track {
   background-color: #4eb7a8;
   border: none;
 }
-form::after {
-  content: "0 25 50 75 100";
-  position: absolute;
-  background: transparent;
-  word-spacing: 2.7rem;
-  top: 1.2rem;
-  left: 0rem;
-  font-size: 0.6rem;
-}
 .sliders__first,
 .sliders__second {
   display: inline-block;
+}
+.slider__ruler {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #808080;
+  margin-left: 0.5rem;
+}
+.slider__ruler_number {
+  display: inline-block;
+  width: 1.05rem;
+  text-align: center;
+}
+.slider__ruler_number:not(:last-of-type) {
+  margin-right: 2.35rem;
 }

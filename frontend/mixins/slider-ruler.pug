@@ -1,0 +1,6 @@
+mixin slider-ruler(min, max, step)
+    -var cols = (max - min) / step + 1;
+    -var n = 1;
+    div.slider__ruler
+        while cols--
+            div.slider__ruler_number(id= n)

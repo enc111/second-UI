@@ -26446,12 +26446,14 @@ var multi = new __WEBPACK_IMPORTED_MODULE_1_chart_js___default.a(ctx, {
             marginLeft: offset + "%"
         }).text(el.val());
     });
+    $(".slider__ruler_number").text($(".slider__ruler_number").attr('id'));
 
 });
 
 $(".sliders__second_range2").on('input', function () {
     $( this ).css( 'background', 'linear-gradient(to right, #4eb7a8 0%, #4eb7a8 '+this.value +'%, #e5e5e5 ' + this.value + '%, #e5e5e5 100%)' );
 });
+
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
