@@ -26446,7 +26446,6 @@ var multi = new __WEBPACK_IMPORTED_MODULE_1_chart_js___default.a(ctx, {
             marginLeft: offset + "%"
         }).text(el.val());
     });
-    $(".slider__ruler_number").text($(".slider__ruler_number").attr('id'));
 
 });
 

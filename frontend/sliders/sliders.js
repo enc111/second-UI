@@ -13,7 +13,6 @@ $(function() {
             marginLeft: offset + "%"
         }).text(el.val());
     });
-    $(".slider__ruler_number").text($(".slider__ruler_number").attr('id'));
 
 });
 

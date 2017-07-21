@@ -1,6 +1,7 @@
 mixin slider-ruler(min, max, step)
-    -var cols = (max - min) / step + 1;
-    -var n = 1;
+    -var cols = parseInt((max - min) / step + 1);
+    -var iter = cols;
     div.slider__ruler
-        while cols--
-            div.slider__ruler_number(id= n)
+        while iter--
+            div.slider__ruler_number(style= 'margin-right: '+ ((14.44- 1.05* cols)/ (cols- 1))+ 'rem')= min+ (cols - iter - 1)* step
+
