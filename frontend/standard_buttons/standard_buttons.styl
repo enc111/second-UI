@@ -3,23 +3,23 @@ button-shadow(n, color)
     0 n 0 1px color
 
 .standard-buttons h1
-  margin-top 4.72rem
+  margin 4.72rem 0 3.89rem 0
 
 .standard-buttons__table
   display table
   text-align center
   border-collapse collapse
   border-width 0
-  margin 3.89rem auto 0 auto
+  margin 0 auto 0 auto
 
-ul
+.standard-buttons ul
   display table-row
 
-li
+.standard-buttons li
   display table-cell
   vertical-align bottom
 
-li button
+.standard-buttons li button
   overflow hidden
   position relative
   color #ffffff
@@ -37,38 +37,38 @@ li button
   height 1.278rem
   font-size 0.56rem
 
-li:first-of-type button
-li:nth-of-type(2) button
+.standard-buttons li:first-of-type button
+.standard-buttons li:nth-of-type(2) button
   background-color first-color
   button-shadow 0.2rem first-border-color
 
-li:last-of-type button
-li:nth-of-type(3) button
+.standard-buttons li:last-of-type button
+.standard-buttons li:nth-of-type(3) button
   background-color second-color
   button-shadow 0.2rem second-border-color
 
-li button:hover
+.standard-buttons li button:hover
   background-color #ffffff
 
-li:first-of-type button:hover
-li:nth-of-type(2) button:hover
+.standard-buttons li:first-of-type button:hover
+.standard-buttons li:nth-of-type(2) button:hover
   color first-color
 
-li:last-of-type button:hover
-li:nth-of-type(3) button:hover
+.standard-buttons li:last-of-type button:hover
+.standard-buttons li:nth-of-type(3) button:hover
   color second-color
 
-li:last-of-type button:active
+.standard-buttons li:last-of-type button:active
 li:nth-of-type(3) button:active
   background-color second-color
   color #ffffff
 
-li:first-of-type button:active
-li:nth-of-type(2) button:active
+.standard-buttons li:first-of-type button:active
+.standard-buttons li:nth-of-type(2) button:active
   background-color first-color
   color #ffffff
 
-li button:active
+.standard-buttons li button:active
   box-shadow none
   border none
   cursor pointer

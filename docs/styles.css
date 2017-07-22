@@ -35,7 +35,73 @@
 
 svg .icon {
     font-family: FontAwesome;
-}@font-face {
+}
+ul.progressbar {
+  height: 1.67rem;
+  padding: 0;
+  counter-reset: step;
+  margin: 0;
+}
+ul.progressbar li {
+  list-style-type: none;
+  color: #9d9d9d;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 0.778rem;
+  margin: 0;
+  padding: 0;
+}
+ul.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  padding: 0;
+  margin: 0;
+  color: #9d9d9d;
+  width: 1.67rem;
+  height: 1.67rem;
+  line-height: 1.67rem;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  background: #e5e5e5;/*rgb(216,216,216);*/
+}
+ul.progressbar li:after {
+  content: "";
+  margin: 0;
+  padding: 0;
+  background: #e5e5e5;/*#ddd;*/
+  position: absolute;
+  width: 100%;
+  height: 0.33rem;
+  top: 0.53rem;
+  right: -15%;
+  z-index: -1;
+}
+
+
+ul.progressbar li:last-child {
+  width: 0 !important;
+}
+
+ul.progressbar li:last-child:after {
+  content: none;
+
+  margin: 0;
+}
+ul.progressbar li.current:before {
+ /* background: rgb(104, 191, 250);
+  color: #fff;*/
+}
+ul.progressbar li.fail:before {
+  /*background: rgb(229, 48, 40)*/
+}
+ul.progressbar li.current:before,
+ul.progressbar li.done:before, ul.progressbar li.done:after {
+  background: #e75735;/*rgb(21,219,158);*/
+  color: #fff;
+}
+@font-face {
   font-family: LatoBlack;
   src: url(fonts/Lato-Black.ttf), url(fonts/Lato-Black.svg), url(fonts/Lato-Black.woff);
 }
@@ -53,23 +119,23 @@ h1 {
   color: #4f4f4f;
 }
 .standard-buttons h1 {
-  margin-top: 4.72rem;
+  margin: 4.72rem 0 3.89rem 0;
 }
 .standard-buttons__table {
   display: table;
   text-align: center;
   border-collapse: collapse;
   border-width: 0;
-  margin: 3.89rem auto 0 auto;
+  margin: 0 auto 0 auto;
 }
-ul {
+.standard-buttons ul {
   display: table-row;
 }
-li {
+.standard-buttons li {
   display: table-cell;
   vertical-align: bottom;
 }
-li button {
+.standard-buttons li button {
   overflow: hidden;
   position: relative;
   color: #fff;
@@ -87,38 +153,38 @@ li button {
   height: 1.278rem;
   font-size: 0.56rem;
 }
-li:first-of-type button,
-li:nth-of-type(2) button {
+.standard-buttons li:first-of-type button,
+.standard-buttons li:nth-of-type(2) button {
   background-color: #4eb7a8;
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
 }
-li:last-of-type button,
-li:nth-of-type(3) button {
+.standard-buttons li:last-of-type button,
+.standard-buttons li:nth-of-type(3) button {
   background-color: #e75735;
   box-shadow: 0 0 0 1px #bf3e1f, 0 0.2rem 0 1px #bf3e1f;
 }
-li button:hover {
+.standard-buttons li button:hover {
   background-color: #fff;
 }
-li:first-of-type button:hover,
-li:nth-of-type(2) button:hover {
+.standard-buttons li:first-of-type button:hover,
+.standard-buttons li:nth-of-type(2) button:hover {
   color: #4eb7a8;
 }
-li:last-of-type button:hover,
-li:nth-of-type(3) button:hover {
+.standard-buttons li:last-of-type button:hover,
+.standard-buttons li:nth-of-type(3) button:hover {
   color: #e75735;
 }
-li:last-of-type button:active,
+.standard-buttons li:last-of-type button:active,
 li:nth-of-type(3) button:active {
   background-color: #e75735;
   color: #fff;
 }
-li:first-of-type button:active,
-li:nth-of-type(2) button:active {
+.standard-buttons li:first-of-type button:active,
+.standard-buttons li:nth-of-type(2) button:active {
   background-color: #4eb7a8;
   color: #fff;
 }
-li button:active {
+.standard-buttons li button:active {
   box-shadow: none;
   border: none;
   cursor: pointer;
@@ -267,10 +333,16 @@ li button:active {
   width: 100px;
   height: 100px;
 }
-form {
+.sliders h1 {
+  margin: 1.7rem auto 2.22rem auto;
+}
+.sliders form {
   position: relative;
-  margin: 150px;
+  margin: 0 auto;
   text-align: left;
+}
+.sliders__first {
+  margin-right: 3.89rem;
 }
 .sliders__first output {
   position: absolute;
@@ -298,7 +370,7 @@ form {
   margin-left: -0.139rem;
   margin-top: -0.056rem;
 }
-input[type='range'] {
+.sliders input[type='range'] {
   appearance: none;
   -webkit-appearance: none;
   outline: none;
@@ -371,4 +443,14 @@ input[type='range']::-moz-range-track {
 }
 .slider__ruler_number:last-of-type {
   margin-right: 0 !important;
+}
+.stages h1 {
+  margin: 3.11rem auto 1.44rem auto;
+}
+#steps {
+  width: 35rem;
+  margin: 0 auto;
+}
+.form-elements h1 {
+  margin: 2.72rem auto 2.5rem auto;
 }
