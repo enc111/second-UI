@@ -19,6 +19,7 @@ button-shadow(n, color)
   display table-cell
   vertical-align bottom
 
+.standard-buttons__table_button
 .standard-buttons li button
   overflow hidden
   position relative
@@ -32,11 +33,11 @@ button-shadow(n, color)
   border none
   margin 0.556rem 0.639rem
 
-.standard-buttons__table_little
-  width 4.33rem
-  height 1.278rem
+.standard-buttons__table .standard-buttons__table_little
+  width 4.33rem !important
+  height 1.278rem !important
   font-size 0.56rem
-
+.standard-buttons__table_button
 .standard-buttons li:first-of-type button
 .standard-buttons li:nth-of-type(2) button
   background-color first-color
@@ -46,10 +47,10 @@ button-shadow(n, color)
 .standard-buttons li:nth-of-type(3) button
   background-color second-color
   button-shadow 0.2rem second-border-color
-
+.standard-buttons__table_button:hover
 .standard-buttons li button:hover
   background-color #ffffff
-
+.standard-buttons__table_button:hover
 .standard-buttons li:first-of-type button:hover
 .standard-buttons li:nth-of-type(2) button:hover
   color first-color
@@ -63,6 +64,7 @@ li:nth-of-type(3) button:active
   background-color second-color
   color #ffffff
 
+.standard-buttons__table_button:active
 .standard-buttons li:first-of-type button:active
 .standard-buttons li:nth-of-type(2) button:active
   background-color first-color
