@@ -1,18 +1,32 @@
+@import "../mixins/button.styl"
+
 .form-elements h1
   margin 2.72rem auto 2.5rem auto
+
 .form-elements__form
   width 15.94rem
   margin 0 auto
-  text-align center
+
 [class^='form-elements__form_']
   display block
   margin-bottom 0.78rem
   vertical-align middle
   border none
+
 [class^='form-elements__form_']:not([type='submit'])
   background arrow-circle-color
+
+.form-elements__form input:not([type='submit'])
+  height 1.61rem
+  width 11.61rem
+
 .form-elements__form_message
   width 100%
+  height 4.94rem
   resize none
+
 .form-elements__form_submit
-  background first-color
+  button-appearence 6.5rem 1.778rem 0.67rem #ffffff first-color
+  button-shadow 0.2rem first-border-color
+  margin-left auto
+  margin-right 0

@@ -12,7 +12,7 @@
 
       $.each(opts.steps, function(index, value) {
         var $li = $('<li>').text(value.replace('@', '').replace('~', ''));
-        $li.css('width', ((34 + 1.67) / (opts.steps.length - 1)) + 'rem');
+        $li.css('width', (33.056 / (opts.steps.length - 1) - 1.67/opts.steps.length) + 'rem');
 
         if(value.indexOf('@') > -1) {
           $li.addClass('current');

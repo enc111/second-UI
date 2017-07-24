@@ -26485,9 +26485,8 @@ __WEBPACK_IMPORTED_MODULE_0_jquery__('#steps').progressbar({
   $(function() {
 
 
-    $('button').on('click', function (event) {
+    $('button, .form-elements__form_submit').on('click', function (event) {
       event.preventDefault();
-
       var $div = $('<div/>'),
           btnOffset = $(this).offset(),
       		xPos = event.pageX - btnOffset.left,
@@ -26851,7 +26850,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery__('#steps').progressbar({
 
       $.each(opts.steps, function(index, value) {
         var $li = $('<li>').text(value.replace('@', '').replace('~', ''));
-        $li.css('width', ((34 + 1.67) / (opts.steps.length - 1)) + 'rem');
+        $li.css('width', (33.056 / (opts.steps.length - 1) - 1.67/opts.steps.length) + 'rem');
 
         if(value.indexOf('@') > -1) {
           $li.addClass('current');

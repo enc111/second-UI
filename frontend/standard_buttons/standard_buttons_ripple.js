@@ -4,9 +4,8 @@ import * as $ from "jquery"
   $(function() {
 
 
-    $('button').on('click', function (event) {
+    $('button, .form-elements__form_submit').on('click', function (event) {
       event.preventDefault();
-
       var $div = $('<div/>'),
           btnOffset = $(this).offset(),
       		xPos = event.pageX - btnOffset.left,

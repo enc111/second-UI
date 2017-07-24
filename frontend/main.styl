@@ -25,15 +25,32 @@ circle(n, color)
   border-radius 50%
   background-color color
 
+html
+  font-size 18px
+
 body
   text-align center
   font-family LatoBlack
 
 h1
-  font-size 18px
+  font-size 1rem
   text-transform uppercase
   color header-color
+.ripple-effect
+  position absolute
+  border-radius 50%
+  width: 50px//////////////
+  height: 50px////////////////////
+  background white
+  animation ripple-animation 2s
 
+@keyframes ripple-animation
+  from
+    transform scale(1)
+    opacity 0.4
+  to
+    transform scale(2)
+    opacity 0
 @import "vendor/jquery.circlicful.css"
 @import "vendor/jquery.progressbar.css"
 

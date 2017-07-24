@@ -1,0 +1,24 @@
+button-shadow(n, color)
+  box-shadow 0 0 0 1px color,
+  0 n 0 1px color
+
+button-appearence(w, h, fs, tc, bg = none)
+  overflow hidden
+  color tc//#ffffff
+  text-transform uppercase
+  font-weight bold
+  font-size fs//0.67rem
+  width w//6.5rem
+  height h//1.778rem
+  border-radius 0.26rem
+  background bg
+  border none
+  &:hover
+    background tc
+    color bg
+  &:active
+    box-shadow none
+    border none
+    cursor pointer
+    color tc
+    background bg
