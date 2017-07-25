@@ -432,9 +432,17 @@ input[type='range']::-moz-range-track {
   width: 15.94rem;
   margin: 0 auto;
 }
-[class^='form-elements__form_'] {
+.form-elements__form textarea,
+.form-elements__form input[type='submit'] {
   display: block;
-  margin-bottom: 0.78rem;
+}
+.form-elements__form > div {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+[class^='form-elements__form_'] {
+  margin: 0 0 0.78rem 0;
   vertical-align: middle;
   border: none;
 }
@@ -464,6 +472,37 @@ input[type='range']::-moz-range-track {
   height: 1.61rem;
   width: 10.27rem;
   padding: 0 0.667rem;
+}
+.form-elements__form_valid-msg {
+  display: none;
+  width: 3.94rem;
+  height: 1.61rem;
+}
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg {
+  display: inline-block;
+  margin-left: 0.38rem;
+  background: #4eb7a8;
+}
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg:before {
+  content: "";
+  display: inline-block;
+  margin-left: 0;
+  width: 0.2rem;
+  height: 0.4rem;
+  background: #adff2f;
+}
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg {
+  display: inline-block;
+  margin-left: 0.38rem;
+  background: #e75735;
+}
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:before {
+  content: "";
+  display: inline-block;
+  margin: 0;
+  width: 0.2rem;
+  height: 0.4rem;
+  background: #ffd700;
 }
 .form-elements__form_message {
   width: 14.606rem;
