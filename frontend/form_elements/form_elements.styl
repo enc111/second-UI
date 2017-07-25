@@ -15,14 +15,38 @@
 
 [class^='form-elements__form_']:not([type='submit'])
   background arrow-circle-color
+  border-radius 0.2rem
+
+[class^='form-elements__form_']:not([type='submit'])::-moz-placeholder
+  font-family SourceSansProRegular
+  color input-text-color
+  font-size 0.78rem
+  font-weight bolder
+[class^='form-elements__form_']:not([type='submit'])::-ms-input-placeholder
+  font-family SourceSansProRegular
+  color input-text-color
+  font-size 0.78rem
+  font-weight bolder
+[class^='form-elements__form_']:not([type='submit'])::-webkit-input-placeholder
+  font-family SourceSansProRegular
+  color input-text-color
+  font-size 0.78rem
+  font-weight bolder
 
 .form-elements__form input:not([type='submit'])
   height 1.61rem
-  width 11.61rem
+  width 10.27rem
+  padding 0 0.667rem
+  //&:focus
+  //  &:valid
+  //    background green
+  //&:invalid
+  //  background red
 
 .form-elements__form_message
-  width 100%
-  height 4.94rem
+  width 14.606rem
+  height 3.6rem
+  padding 0.667rem
   resize none
 
 .form-elements__form_submit

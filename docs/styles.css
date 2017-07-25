@@ -110,6 +110,10 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   font-family: LatoLight;
   src: url(fonts/Lato-Light.ttf), url(fonts/Lato-Light.svg), url(fonts/Lato-Light.woff);
 }
+@font-face {
+  font-family: SourceSansProRegular;
+  src: url(fonts/SourceSansProRegular.ttf), url(fonts/SourceSansProRegular.svg), url(fonts/SourceSansProRegular.woff);
+}
 html {
   font-size: 18px;
 }
@@ -178,7 +182,7 @@ h1 {
   font-size: 0.67rem;
   width: 6.5rem;
   height: 1.778rem;
-  border-radius: 0.26rem;
+  border-radius: 0.2rem;
   background: none;
   border: none;
   margin: 0.556rem 0.639rem;
@@ -436,14 +440,35 @@ input[type='range']::-moz-range-track {
 }
 [class^='form-elements__form_']:not([type='submit']) {
   background: #e5e5e5;
+  border-radius: 0.2rem;
+}
+[class^='form-elements__form_']:not([type='submit'])::-moz-placeholder {
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+[class^='form-elements__form_']:not([type='submit'])::-ms-input-placeholder {
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+[class^='form-elements__form_']:not([type='submit'])::-webkit-input-placeholder {
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
 }
 .form-elements__form input:not([type='submit']) {
   height: 1.61rem;
-  width: 11.61rem;
+  width: 10.27rem;
+  padding: 0 0.667rem;
 }
 .form-elements__form_message {
-  width: 100%;
-  height: 4.94rem;
+  width: 14.606rem;
+  height: 3.6rem;
+  padding: 0.667rem;
   resize: none;
 }
 .form-elements__form_submit {
@@ -454,7 +479,7 @@ input[type='range']::-moz-range-track {
   font-size: 0.67rem;
   width: 6.5rem;
   height: 1.778rem;
-  border-radius: 0.26rem;
+  border-radius: 0.2rem;
   background: #4eb7a8;
   border: none;
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
