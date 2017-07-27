@@ -50,27 +50,26 @@
   height 1.61rem
 
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg
-  display inline-block
-  margin-left 0.38rem
-  background first-color
-  &:before
-    content ""
-    display inline-block
-    margin-left 0
-    width 0.2rem
-    height 0.4rem
-    background greenyellow
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg
   display inline-block
-  margin-left 0.38rem
-  background second-color
+  margin-left 0.39rem
   &:before
     content ""
+    position absolute
     display inline-block
-    margin 0
-    width 0.2rem
-    height 0.4rem
-    background gold
+    border 0.23rem solid transparent
+    border-left none
+    margin 0.6rem auto auto -0.2rem
+
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg
+  background first-color
+  &:before
+    border-right-color first-color
+
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg
+  background second-color
+  &:before
+    border-right-color second-color
 
 .form-elements__form_message
   width 14.606rem

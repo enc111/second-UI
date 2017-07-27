@@ -478,31 +478,31 @@ input[type='range']::-moz-range-track {
   width: 3.94rem;
   height: 1.61rem;
 }
-.form-elements__form input:valid:focus + div.form-elements__form_valid-msg {
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg,
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg {
   display: inline-block;
-  margin-left: 0.38rem;
+  margin-left: 0.39rem;
+}
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg:before,
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border: 0.23rem solid transparent;
+  border-left: none;
+  margin: 0.6rem auto auto -0.2rem;
+}
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg {
   background: #4eb7a8;
 }
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg:before {
-  content: "";
-  display: inline-block;
-  margin-left: 0;
-  width: 0.2rem;
-  height: 0.4rem;
-  background: #adff2f;
+  border-right-color: #4eb7a8;
 }
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg {
-  display: inline-block;
-  margin-left: 0.38rem;
   background: #e75735;
 }
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:before {
-  content: "";
-  display: inline-block;
-  margin: 0;
-  width: 0.2rem;
-  height: 0.4rem;
-  background: #ffd700;
+  border-right-color: #e75735;
 }
 .form-elements__form_message {
   width: 14.606rem;
