@@ -477,6 +477,7 @@ input[type='range']::-moz-range-track {
   display: none;
   width: 3.94rem;
   height: 1.61rem;
+  padding: 0;
 }
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg,
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg {
@@ -486,11 +487,27 @@ input[type='range']::-moz-range-track {
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg:before,
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:before {
   content: "";
-  position: absolute;
   display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
   border: 0.23rem solid transparent;
   border-left: none;
-  margin: 0.6rem auto auto -0.2rem;
+  margin: 0.6rem auto auto -0.23rem;
+}
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg:after,
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:after {
+  content: '';
+  text-transform: uppercase;
+  font-family: LatoBlack;
+  font-size: 0.556rem;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.61rem;
+  width: 3.94rem;
+  height: 1.61rem;
+  background: transparent;
 }
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg {
   background: #4eb7a8;
@@ -498,11 +515,17 @@ input[type='range']::-moz-range-track {
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg:before {
   border-right-color: #4eb7a8;
 }
+.form-elements__form input:valid:focus + div.form-elements__form_valid-msg:after {
+  content: 'Thanks!';
+}
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg {
   background: #e75735;
 }
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:before {
   border-right-color: #e75735;
+}
+.form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:after {
+  content: 'Error';
 }
 .form-elements__form_message {
   width: 14.606rem;

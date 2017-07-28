@@ -28,11 +28,13 @@
   color input-text-color
   font-size 0.78rem
   font-weight bolder
+
 [class^='form-elements__form_']:not([type='submit'])::-ms-input-placeholder
   font-family SourceSansProRegular
   color input-text-color
   font-size 0.78rem
   font-weight bolder
+
 [class^='form-elements__form_']:not([type='submit'])::-webkit-input-placeholder
   font-family SourceSansProRegular
   color input-text-color
@@ -48,6 +50,7 @@
   display none
   width 3.94rem
   height 1.61rem
+  padding 0
 
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg
@@ -55,21 +58,39 @@
   margin-left 0.39rem
   &:before
     content ""
-    position absolute
     display inline-block
+    position absolute
+    width 0
+    height 0
     border 0.23rem solid transparent
     border-left none
-    margin 0.6rem auto auto -0.2rem
+    margin 0.6rem auto auto -0.23rem
+  &:after
+    content ''
+    text-transform uppercase
+    font-family LatoBlack
+    font-size 0.556rem
+    text-align center
+    color #ffffff
+    display inline-block
+    line-height 1.61rem
+    width 3.94rem
+    height 1.61rem
+    background transparent
 
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg
   background first-color
   &:before
     border-right-color first-color
+  &:after
+    content 'Thanks!'
 
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg
   background second-color
   &:before
     border-right-color second-color
+   &:after
+    content 'Error'
 
 .form-elements__form_message
   width 14.606rem
