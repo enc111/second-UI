@@ -3,9 +3,17 @@
 .form-elements h1
   margin 2.72rem auto 2.5rem auto
 
+.form-elements h2
+  margin 0 auto 1.72rem auto
+
+.form-elements > div
+  display inline-block
+  vertical-align top
+
 .form-elements__form
+  display inline-block
   width 15.94rem
-  margin 0 auto
+  margin 0 5.389rem 0 auto
   & textarea
   & input[type='submit']
     display block
@@ -57,7 +65,7 @@
   display inline-block
   margin-left 0.39rem
   &:before
-    content ""
+    content ''
     display inline-block
     position absolute
     width 0
@@ -103,3 +111,17 @@
   button-shadow 0.2rem first-border-color
   margin-left auto
   margin-right 0
+
+.form-elements__toggles
+  display inline-block
+  margin-right 0.89rem
+.form-elements__toggles label
+  display inline-block
+  width 3.44rem
+  height 1.33rem
+  border-radius 1.72rem
+  background arrow-circle-color
+.form-elements__toggles input[type='checkbox']
+  display none
+.form-elements__toggles input[type='checkbox']:checked + label
+  background first-color

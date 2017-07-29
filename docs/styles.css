@@ -121,7 +121,8 @@ body {
   text-align: center;
   font-family: LatoBlack;
 }
-h1 {
+h1,
+h2 {
   font-size: 1rem;
   text-transform: uppercase;
   color: #4f4f4f;
@@ -428,9 +429,17 @@ input[type='range']::-moz-range-track {
 .form-elements h1 {
   margin: 2.72rem auto 2.5rem auto;
 }
+.form-elements h2 {
+  margin: 0 auto 1.72rem auto;
+}
+.form-elements > div {
+  display: inline-block;
+  vertical-align: top;
+}
 .form-elements__form {
+  display: inline-block;
   width: 15.94rem;
-  margin: 0 auto;
+  margin: 0 5.389rem 0 auto;
 }
 .form-elements__form textarea,
 .form-elements__form input[type='submit'] {
@@ -486,7 +495,7 @@ input[type='range']::-moz-range-track {
 }
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg:before,
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:before {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   width: 0;
@@ -557,6 +566,23 @@ input[type='range']::-moz-range-track {
   border: none;
   cursor: pointer;
   color: #fff;
+  background: #4eb7a8;
+}
+.form-elements__toggles {
+  display: inline-block;
+  margin-right: 0.89rem;
+}
+.form-elements__toggles label {
+  display: inline-block;
+  width: 3.44rem;
+  height: 1.33rem;
+  border-radius: 1.72rem;
+  background: #e5e5e5;
+}
+.form-elements__toggles input[type='checkbox'] {
+  display: none;
+}
+.form-elements__toggles input[type='checkbox']:checked + label {
   background: #4eb7a8;
 }
 @-moz-keyframes ripple-animation {

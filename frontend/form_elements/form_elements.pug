@@ -1,12 +1,23 @@
 mixin form-elements()
     div.form-elements
         h1 Form elements
-        form.form-elements__form(action='' method='')
-            div
-                input.form-elements__form_name(type='text' placeholder='Your Name')
-                div.form-elements__form_valid-msg
-            div
-                input.form-elements__form_email(type='email' placeholder='Your Email')
-                div.form-elements__form_valid-msg
-            textarea.form-elements__form_message(rows='4' placeholder='Your Message')
-            input.form-elements__form_submit(type='submit' value='Submit')
+        div
+            form.form-elements__form(action='' method='')
+                div
+                    input.form-elements__form_name(type='text' placeholder='Your Name')
+                    div.form-elements__form_valid-msg
+                div
+                    input.form-elements__form_email(type='email' placeholder='Your Email')
+                    div.form-elements__form_valid-msg
+                textarea.form-elements__form_message(rows='4' placeholder='Your Message')
+                input.form-elements__form_submit(type='submit' value='Submit')
+        div
+            h2 Toggles
+            div.form-elements__toggles
+                input#toggle1(type='checkbox')
+                label(for='toggle1')
+            div.form-elements__toggles
+                input#toggle2(type='checkbox')
+                label(for='toggle2')
+        div
+            h2 Tick boxes
