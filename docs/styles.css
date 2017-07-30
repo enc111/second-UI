@@ -593,6 +593,7 @@ input[type='range']::-moz-range-track {
 .form-elements__toggles input[type='checkbox']:checked + label:after {
   content: '';
   display: inline-block;
+  margin: 0;
   margin: auto;
   line-height: 1.389rem;
   width: 1.056rem;
@@ -617,15 +618,19 @@ input[type='range']::-moz-range-track {
   vertical-align: middle;
 }
 .form-elements__toggles input[type='checkbox']:checked + label {
+  top: 0;
+  left: 0;
   background-color: #4eb7a8;
   vertical-align: middle;
   line-height: 1.389rem;
   text-align: center;
 }
 .form-elements__toggles input[type='checkbox']:checked + label:before {
+  margin-top: -0.3rem;
   content: 'on';
 }
 .form-elements__toggles input[type='checkbox']:checked + label:after {
+  margin-top: -0.3rem;
   margin-left: 0.389rem;
 }
 .form-elements__toggles label:before {
