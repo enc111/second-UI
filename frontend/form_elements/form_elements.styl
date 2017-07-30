@@ -1,5 +1,14 @@
 @import "../mixins/button.styl"
 
+little-text()
+  display inline-block
+  text-transform uppercase
+  font-family LatoBlack
+  font-size 0.556rem
+  text-align center
+  color #ffffff
+  background transparent
+
 .form-elements h1
   margin 2.72rem auto 2.5rem auto
 
@@ -72,19 +81,13 @@
     height 0
     border 0.23rem solid transparent
     border-left none
-    margin 0.6rem auto auto -0.23rem
+    margin 0.6rem auto auto -0.22rem
   &:after
     content ''
-    text-transform uppercase
-    font-family LatoBlack
-    font-size 0.556rem
-    text-align center
-    color #ffffff
-    display inline-block
     line-height 1.61rem
     width 3.94rem
     height 1.61rem
-    background transparent
+    little-text()
 
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg
   background first-color
@@ -117,11 +120,44 @@
   margin-right 0.89rem
 .form-elements__toggles label
   display inline-block
-  width 3.44rem
+  width 3.22rem
   height 1.33rem
   border-radius 1.72rem
   background arrow-circle-color
+
 .form-elements__toggles input[type='checkbox']
   display none
+.form-elements__toggles label:before,
+.form-elements__toggles input[type='checkbox']:checked + label:after
+  content ''
+  display inline-block
+  line-height 1.33rem
+  circle 1.056rem #ffffff
+  vertical-align middle
+
+.form-elements__toggles label:after,
+.form-elements__toggles input[type='checkbox']:checked + label:before
+  little-text()
+  line-height 1.33rem
+  margin 0
+  vertical-align middle
+
 .form-elements__toggles input[type='checkbox']:checked + label
   background first-color
+  vertical-align middle
+  line-height 1.33rem
+  &:before
+    content 'on'
+    display inline
+  &:after
+    margin auto -0.26rem auto 0.389rem
+
+.form-elements__toggles label:before
+  margin auto 0.389rem auto -0.24rem
+
+.form-elements__toggles label:after
+  content 'off'
+
+
+
+

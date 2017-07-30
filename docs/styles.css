@@ -502,20 +502,20 @@ input[type='range']::-moz-range-track {
   height: 0;
   border: 0.23rem solid transparent;
   border-left: none;
-  margin: 0.6rem auto auto -0.23rem;
+  margin: 0.6rem auto auto -0.22rem;
 }
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg:after,
 .form-elements__form input:invalid:not([type='submit']) + div.form-elements__form_valid-msg:after {
   content: '';
+  line-height: 1.61rem;
+  width: 3.94rem;
+  height: 1.61rem;
+  display: inline-block;
   text-transform: uppercase;
   font-family: LatoBlack;
   font-size: 0.556rem;
   text-align: center;
   color: #fff;
-  display: inline-block;
-  line-height: 1.61rem;
-  width: 3.94rem;
-  height: 1.61rem;
   background: transparent;
 }
 .form-elements__form input:valid:focus + div.form-elements__form_valid-msg {
@@ -574,7 +574,7 @@ input[type='range']::-moz-range-track {
 }
 .form-elements__toggles label {
   display: inline-block;
-  width: 3.44rem;
+  width: 3.22rem;
   height: 1.33rem;
   border-radius: 1.72rem;
   background: #e5e5e5;
@@ -582,8 +582,47 @@ input[type='range']::-moz-range-track {
 .form-elements__toggles input[type='checkbox'] {
   display: none;
 }
+.form-elements__toggles label:before,
+.form-elements__toggles input[type='checkbox']:checked + label:after {
+  content: '';
+  display: inline-block;
+  line-height: 1.33rem;
+  width: 1.056rem;
+  height: 1.056rem;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.form-elements__toggles label:after,
+.form-elements__toggles input[type='checkbox']:checked + label:before {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: LatoBlack;
+  font-size: 0.556rem;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  line-height: 1.33rem;
+  margin: 0;
+  vertical-align: middle;
+}
 .form-elements__toggles input[type='checkbox']:checked + label {
   background: #4eb7a8;
+  vertical-align: middle;
+  line-height: 1.33rem;
+}
+.form-elements__toggles input[type='checkbox']:checked + label:before {
+  content: 'on';
+  display: inline;
+}
+.form-elements__toggles input[type='checkbox']:checked + label:after {
+  margin: auto -0.26rem auto 0.389rem;
+}
+.form-elements__toggles label:before {
+  margin: auto 0.389rem auto -0.24rem;
+}
+.form-elements__toggles label:after {
+  content: 'off';
 }
 @-moz-keyframes ripple-animation {
   from {
