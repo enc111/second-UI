@@ -4,11 +4,12 @@ little-text()
   display inline-block
   text-transform uppercase
   font-family LatoBlack
-  font-size 0.556rem
+  font-size 0.667rem
   text-align center
   color #ffffff
   background transparent
 
+toggle-height = 1.389rem
 .form-elements h1
   margin 2.72rem auto 2.5rem auto
 
@@ -115,51 +116,58 @@ little-text()
   margin-left auto
   margin-right 0
 
+ //toggles
 .form-elements__toggles
+  position relative
+  height toggle-height
+  width 3.22rem
   display inline-block
-  margin-right 0.89rem
+  margin 0 0.89rem 0 0
 
 .form-elements__toggles label
   display inline-block
+  position absolute
+  top 0
+  left 0
   width 3.22rem
-  height 1.33rem
+  height toggle-height
   border-radius 1.72rem
-  background arrow-circle-color
+  background-color arrow-circle-color
 
 .form-elements__toggles input[type='checkbox']
   display none
+  height 0
 
 .form-elements__toggles label:before,
 .form-elements__toggles input[type='checkbox']:checked + label:after
   content ''
   display inline-block
-  line-height 1.33rem
+  margin auto
+  line-height toggle-height
   circle 1.056rem #ffffff
   vertical-align middle
 
 .form-elements__toggles label:after,
 .form-elements__toggles input[type='checkbox']:checked + label:before
+  height toggle-height
   little-text()
-  line-height 1.33rem
-  margin auto 0
+  line-height toggle-height
+  margin 0
+  margin auto
   vertical-align middle
 
 .form-elements__toggles input[type='checkbox']:checked + label
-  background first-color
+  background-color first-color
   vertical-align middle
-  line-height 1.33rem
+  line-height toggle-height
+  text-align center
   &:before
     content 'on'
-    display inline
   &:after
-    margin auto -0.26rem auto 0.389rem
+    margin-left 0.389rem
 
 .form-elements__toggles label:before
-  margin auto 0.389rem auto -0.24rem
+  margin-right 0.389rem
 
 .form-elements__toggles label:after
   content 'off'
-
-
-
-
