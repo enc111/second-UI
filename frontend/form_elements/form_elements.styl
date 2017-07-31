@@ -117,6 +117,10 @@ toggle-height = 1.389rem
   margin-right 0
 
  //toggles
+.form-elements> div:nth-of-type(2)
+  margin-right 4rem
+  margin-bottom 0
+
 .form-elements__toggles
   height toggle-height
   width 3.22rem
@@ -129,10 +133,6 @@ toggle-height = 1.389rem
   height toggle-height
   border-radius 1.72rem
   background-color arrow-circle-color
-
-.form-elements__toggles input[type='checkbox']
-  display none
-  height 0
 
 .form-elements__toggles label:before,
 .form-elements__toggles input[type='checkbox']:checked + label:after
@@ -172,3 +172,23 @@ toggle-height = 1.389rem
 .form-elements__toggles label:after
   margin-top -0.1rem
   content 'off'
+.form-elements__tick-boxes input[type='checkbox']
+.form-elements__toggles input[type='checkbox']
+  display none
+  height 0
+//tick boxes
+.form-elements__tick-boxes
+  display inline-block
+  margin-right 1.056rem
+.form-elements__tick-boxes label
+  display inline-block
+  circle 1.389rem arrow-circle-color
+  &:before
+    content '\2714'
+    font-size 0.8rem
+    color pie-text-color
+
+.form-elements__tick-boxes input[type='checkbox']:checked + label
+  background-color first-color
+  &:before
+    color #ffffff
