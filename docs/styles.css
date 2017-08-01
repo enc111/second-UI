@@ -126,6 +126,7 @@ body {
 h1,
 h2 {
   font-size: 1rem;
+  word-spacing: 0.61rem;
   text-transform: uppercase;
   color: #4f4f4f;
 }
@@ -286,6 +287,7 @@ h2 {
 }
 .percentages h1 {
   margin: 2.278rem auto 1.39rem auto;
+  word-spacing: 0.28rem;
 }
 .pie {
   display: inline-block;
@@ -433,6 +435,9 @@ input[type='range']::-moz-range-track {
 }
 .form-elements h2 {
   margin: 0 auto 1.72rem auto;
+}
+.form-elements h2:nth-of-type(2) {
+  margin-top: 2rem;
 }
 .form-elements > div {
   display: inline-block;
