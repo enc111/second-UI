@@ -461,6 +461,7 @@ input[type='range']::-moz-range-track {
   margin: 0 0 0.78rem 0;
   vertical-align: middle;
   border: none;
+  overflow: hidden;
 }
 [class^='form-elements__form_']:not([type='submit']) {
   background: #e5e5e5;
@@ -561,6 +562,7 @@ input[type='range']::-moz-range-track {
   background: #4eb7a8;
   border: none;
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
+  margin-bottom: 0.3rem;
   margin-left: auto;
   margin-right: 0;
 }
@@ -668,6 +670,48 @@ input[type='range']::-moz-range-track {
 }
 .form-elements__tick-boxes input[type='checkbox']:checked + label:before {
   color: #fff;
+}
+.search {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.search h1 {
+  margin: 3.5rem auto 0.833rem auto;
+}
+.search input[type='search'] {
+  background: #e5e5e5;
+  height: 1.61rem;
+  width: 14.606rem;
+  padding: 0 0.667rem;
+  border: none;
+  overflow: hidden;
+  background: #e5e5e5;
+  border-radius: 0.2rem;
+}
+.search input[type='search']::-moz-placeholder {
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.search input[type='search']::-ms-input-placeholder {
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.search input[type='search']::-webkit-input-placeholder {
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.user-profile {
+  display: inline-block;
+  vertical-align: top;
+}
+.user-profile h1 {
+  margin: 3.5rem auto 1.94rem auto;
 }
 @-moz-keyframes ripple-animation {
   from {

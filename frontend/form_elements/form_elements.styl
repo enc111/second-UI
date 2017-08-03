@@ -1,4 +1,5 @@
 @import "../mixins/button.styl"
+@import "../mixins/input-appearence.styl"
 
 little-text()
   display inline-block
@@ -10,13 +11,15 @@ little-text()
   background transparent
 
 toggle-height = 1.389rem
+
 .form-elements h1
   margin 2.72rem auto 2.5rem auto
 
 .form-elements h2
   margin 0 auto 1.72rem auto
+
 .form-elements h2:nth-of-type(2)
-   margin-top 2rem
+  margin-top 2rem
 
 .form-elements > div
   display inline-block
@@ -38,28 +41,10 @@ toggle-height = 1.389rem
   margin 0 0 0.78rem 0
   vertical-align middle
   border none
+  overflow hidden
 
 [class^='form-elements__form_']:not([type='submit'])
-  background arrow-circle-color
-  border-radius 0.2rem
-
-[class^='form-elements__form_']:not([type='submit'])::-moz-placeholder
-  font-family SourceSansProRegular
-  color input-text-color
-  font-size 0.78rem
-  font-weight bolder
-
-[class^='form-elements__form_']:not([type='submit'])::-ms-input-placeholder
-  font-family SourceSansProRegular
-  color input-text-color
-  font-size 0.78rem
-  font-weight bolder
-
-[class^='form-elements__form_']:not([type='submit'])::-webkit-input-placeholder
-  font-family SourceSansProRegular
-  color input-text-color
-  font-size 0.78rem
-  font-weight bolder
+  input-appearence()
 
 .form-elements__form input:not([type='submit'])
   height 1.61rem
@@ -115,6 +100,7 @@ toggle-height = 1.389rem
 .form-elements__form_submit
   button-appearence 6.5rem 1.778rem 0.67rem #ffffff first-color
   button-shadow 0.2rem first-border-color
+  margin-bottom 0.3rem
   margin-left auto
   margin-right 0
 

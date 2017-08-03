@@ -1,0 +1,15 @@
+input-appearence-ph(f = 0.78rem)
+  font-family SourceSansProRegular
+  color input-text-color
+  font-size f
+  font-weight bolder
+
+input-appearence()
+  background arrow-circle-color
+  border-radius 0.2rem
+  &::-moz-placeholder
+    input-appearence-ph()
+  &::-ms-input-placeholder
+    input-appearence-ph()
+  &::-webkit-input-placeholder
+    input-appearence-ph()
