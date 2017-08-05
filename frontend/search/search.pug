@@ -3,4 +3,11 @@ mixin search()
         h1 Search / drop down
         form.search__form(action='' method='')
             input(type='search' placeholder='Search')
-            input(type='submit' value!="&#128269;")
+            input(type='submit' value='')
+        form.search__form(action='' method='')
+            input.search__form_not-found(type='search' placeholder!='I&#39;ve not found what I&#39;m looking for...')
+            input(type='submit' value='')
+        form.search__form(action='' method='')
+            select
+                option(value='Choose' selected) Choose An Option
+

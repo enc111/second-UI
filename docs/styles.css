@@ -123,6 +123,12 @@ body {
   text-align: center;
   font-family: LatoBlack;
 }
+* {
+  border: none;
+}
+*:focus {
+  outline: none;
+}
 h1,
 h2 {
   font-size: 1rem;
@@ -678,33 +684,84 @@ input[type='range']::-moz-range-track {
 .search h1 {
   margin: 3.5rem auto 0.833rem auto;
 }
+.search__form {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.search select,
 .search input[type='search'] {
-  background: #e5e5e5;
   height: 1.61rem;
   width: 14.606rem;
   padding: 0 0.667rem;
+  font-family: SourceSansProRegular;
+  color: #747474;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.search input[type='search'] {
   border: none;
   overflow: hidden;
+}
+.search input[type='search']:not(.search__form_not-found) {
   background: #e5e5e5;
   border-radius: 0.2rem;
 }
-.search input[type='search']::-moz-placeholder {
+.search input[type='search']:not(.search__form_not-found)::-moz-placeholder {
   font-family: SourceSansProRegular;
   color: #747474;
   font-size: 0.78rem;
   font-weight: bolder;
 }
-.search input[type='search']::-ms-input-placeholder {
+.search input[type='search']:not(.search__form_not-found)::-ms-input-placeholder {
   font-family: SourceSansProRegular;
   color: #747474;
   font-size: 0.78rem;
   font-weight: bolder;
 }
-.search input[type='search']::-webkit-input-placeholder {
+.search input[type='search']:not(.search__form_not-found)::-webkit-input-placeholder {
   font-family: SourceSansProRegular;
   color: #747474;
   font-size: 0.78rem;
   font-weight: bolder;
+}
+.search input[type='submit'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e75735;
+  background-image: url(search/search.svg);
+  background-size: 40%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 1.61rem;
+  width: 1.89rem;
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+.search__form_not-found {
+  background: #e75735;
+  border-radius: 0.2rem;
+}
+.search__form_not-found::-moz-placeholder {
+  font-family: SourceSansProRegular;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.search__form_not-found::-ms-input-placeholder {
+  font-family: SourceSansProRegular;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.search__form_not-found::-webkit-input-placeholder {
+  font-family: SourceSansProRegular;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: bolder;
+}
+.search select {
+  background: #e5e5e5;
+  border-radius: 0.2rem;
 }
 .user-profile {
   display: inline-block;

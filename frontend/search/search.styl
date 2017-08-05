@@ -1,5 +1,7 @@
 @import "../mixins/input-appearence.styl"
 
+height-of-input=1.61rem
+
 .search
   display inline-block
   margin-right 2rem
@@ -7,11 +9,36 @@
 .search h1
   margin 3.5rem auto 0.833rem auto
 
+.search__form
+  position relative
+  margin-bottom 1rem
+
+.search select
 .search input[type='search']
-  background arrow-circle-color
-  height 1.61rem
+  height height-of-input
   width 14.606rem
   padding 0 0.667rem
+  input-appearence-ph input-text-color
+
+.search input[type='search']
   border none
   overflow hidden
-  input-appearence()
+  &:not(.search__form_not-found)
+    input-appearence input-text-color
+
+.search input[type='submit']
+  position absolute
+  top 0
+  right 0
+  background-color second-color
+  background-icon "search/search.svg" 40%
+  height height-of-input
+  width 1.89rem
+  border-radius 0 0.2rem 0.2rem 0
+
+.search__form_not-found
+  input-appearence #ffffff second-color
+
+.search select
+  background arrow-circle-color
+  border-radius 0.2rem

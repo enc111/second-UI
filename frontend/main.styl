@@ -32,6 +32,12 @@ circle(n, color)
   border-radius 50%
   background-color color
 
+background-icon(path, n = 60%)
+  background-image url(path)
+  background-size n
+  background-position 50% 50%
+  background-repeat no-repeat
+
 html
   font-size 18px
 
@@ -40,6 +46,11 @@ body
   margin 0 auto
   text-align center
   font-family LatoBlack
+
+*
+  border none
+  &:focus
+    outline none
 
 h1,
 h2
