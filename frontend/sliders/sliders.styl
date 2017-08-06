@@ -1,5 +1,8 @@
+@import "../mixins/appearance1.styl"
+
 .sliders h1
   margin 1.7rem auto 2.22rem auto
+
 .sliders form
   position relative
   margin 0 auto
@@ -7,6 +10,7 @@
 
 .sliders__first
   margin-right 3.89rem
+
 .sliders__first output
   position absolute
   background-color second-color
@@ -19,23 +23,21 @@
   font LatoBlack 0.72rem
   bottom 130%
   left 0
-
-.sliders__first output:after
-  content ""
-  position absolute
-  width 0
-  height 0
-  border-top 0.278rem solid second-color
-  border-left 0.139rem solid transparent
-  border-right 0.139rem solid transparent
-  top 100%
-  left 50%
-  margin-left -0.139rem
-  margin-top -0.056rem
+  &:after
+    content ""
+    position absolute
+    width 0
+    height 0
+    border-top 0.278rem solid second-color
+    border-left 0.139rem solid transparent
+    border-right 0.139rem solid transparent
+    top 100%
+    left 50%
+    margin-left -0.139rem
+    margin-top -0.056rem
 
 .sliders input[type='range']
-  appearance none
-  -webkit-appearance none
+  appearance1 none
   outline none
   height 0.35rem
   width 14.44rem

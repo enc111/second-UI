@@ -1,4 +1,5 @@
-@import "../mixins/input-appearence.styl"
+@import "../mixins/input-appearance.styl"
+@import "../mixins/appearance1.styl"
 
 height-of-input=1.61rem
 
@@ -10,21 +11,24 @@ height-of-input=1.61rem
   margin 3.5rem auto 0.833rem auto
 
 .search__form
-  position relative
   margin-bottom 1rem
+
+.search__form
+.search__dropdown-wrap
+  position relative
 
 .search select
 .search input[type='search']
   height height-of-input
   width 14.606rem
   padding 0 0.667rem
-  input-appearence-ph input-text-color
+  input-appearance-ph input-text-color
 
 .search input[type='search']
   border none
   overflow hidden
   &:not(.search__form_not-found)
-    input-appearence input-text-color
+    input-appearance input-text-color
 
 .search input[type='submit']
   position absolute
@@ -34,11 +38,38 @@ height-of-input=1.61rem
   background-icon "search/search.svg" 40%
   height height-of-input
   width 1.89rem
-  border-radius 0 0.2rem 0.2rem 0
 
 .search__form_not-found
-  input-appearence #ffffff second-color
+  input-appearance #ffffff second-color
 
 .search select
+  appearance1 none
   background arrow-circle-color
   border-radius 0.2rem
+
+.search input[type='submit']
+.search__dropdown-wrap:after
+  border-radius 0 0.2rem 0.2rem 0
+
+.search__dropdown-wrap:before
+.search__dropdown-wrap:after
+  content ''
+  display inline-block
+  pointer-events none //for clicable
+  position absolute
+
+.search__dropdown-wrap:after
+  top 0
+  right 0
+  background first-color
+  height height-of-input
+  width 1.89rem
+  z-index 1
+
+.search__dropdown-wrap:before
+  top 20%
+  right 4%
+  width 0.35rem
+  height 0.35rem
+  arrow 0.15rem -135deg 0
+  z-index 999

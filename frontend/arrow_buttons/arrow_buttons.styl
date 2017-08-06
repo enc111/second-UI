@@ -1,9 +1,4 @@
-transform2(action1, action2)
-  -moz-transform action1 action2
-  -ms-transform action1 action2
-  -webkit-transform action1 action2
-  -o-transform action1 action2
-  transform action1 action2
+@import "../mixins/transform2.styl"
 
 arrow(size, degr, vert, color = #ffffff)
   border size solid transparent
@@ -13,19 +8,18 @@ arrow(size, degr, vert, color = #ffffff)
 
 .arrow-buttons h1
   margin 2.5rem auto 2.056rem auto
+
 .arrow-buttons__circle
   display inline-block
   circle 2.89rem arrow-circle-color
   margin 0 auto
   margin-right 1.44rem
-
-.arrow-buttons__circle:hover
-  circle 2.89rem first-color
-
-.arrow-buttons__circle:active
-  circle 2.89rem #ffffff
-  border 0.278rem solid first-color
-  box-sizing border-box
+  &:hover
+    circle 2.89rem first-color
+  &:active
+    circle 2.89rem #ffffff
+    border 0.278rem solid first-color
+    box-sizing border-box
 
 .arrow-buttons__circle_arrow-left
 .arrow-buttons__circle_arrow-right
