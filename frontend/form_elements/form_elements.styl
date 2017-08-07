@@ -149,17 +149,21 @@ toggle-height = 1.389rem
   &:before
     margin-top -0.3rem
     content 'on'
+    -webkit-transition: .4s;
+    transition: .4s;
   &:after
     margin-top -0.3rem
     margin-left 0.389rem
 
 .form-elements__toggles label:before
-  margin-top -0.1rem
+  margin-top -0.15rem
   margin-right 0.389rem
 
 .form-elements__toggles label:after
-  margin-top -0.1rem
+  margin-top -0.15rem
   content 'off'
+  -webkit-transition: .4s;
+  transition: .4s;
 .form-elements__tick-boxes input[type='checkbox']
 .form-elements__toggles input[type='checkbox']
   display none
