@@ -8,19 +8,105 @@
 .user-profile_photo
   circle 4.67rem transparent
   border 0.278rem solid arrow-circle-color
-  margin 0 0.389rem 1.156rem 0
+  margin 0 0.61rem 1.156rem 0
   &:first-of-type
     background-icon "user_profile/man1.png" 100%
 
-.user-profile div:nth-of-type(3)
+.user-profile > div:nth-of-type(3)
   background-icon "user_profile/woman1.png" 100%
 
 .user-profile_photo
-.user-profile_info
+.user-profile__info
   display inline-block
 
-.user-profile_info
+.user-profile__info
   vertical-align top
   height 5.22rem
   width 9.167rem
   background arrow-circle-color
+  border-radius 0.4rem
+  position relative
+  &:before
+    content ''
+    display inline-block
+    position absolute
+    width 0.1rem
+    height 0.1rem
+    border 0.34rem solid transparent
+    border-right-color arrow-circle-color
+    border-right-width 0.44rem
+    border-left none
+    top 50%
+    margin-top -0.44rem
+    left -0.44rem
+  & h3
+    font-family LatoRegular
+    font-size 1rem
+    line-height 1rem
+    margin 0.61rem auto 0 auto
+    font-weight normal
+    color dark-text-color
+  & h4
+    font-weight bold
+    font-size 0.61rem
+    line-height 0.61rem
+    text-transform uppercase
+    margin 0.22rem auto 0 auto
+    color header-color
+  &:hover
+    background first-color
+    &:before
+      border-right-color first-color
+    & h3
+    & h4
+      color #ffffff
+    & .user-profile__info__social_fb
+      color #ffffff
+    & .user-profile__info__social_twitter
+      background-icon "user_profile/social_icons/twitter.svg" 97%
+    & .user-profile__info__social_dribbble
+      background-icon "user_profile/social_icons/dribbble.svg" 85%
+  &:active
+    background arrow-circle-color
+    &:before
+      border-right-color arrow-circle-color
+    & h3
+      color second-color
+    & h4
+      color dark-text-color
+    & .user-profile__info__social_twitter
+      background-icon "user_profile/social_icons/twitter_grey.svg" 97%
+    & .user-profile__info__social_dribbble
+      background-icon "user_profile/social_icons/dribbble_grey.svg" 85%
+    & .user-profile__info__social_fb
+      color dark-text-color
+
+.user-profile__info__social div
+  display inline-block
+  width 1.61rem
+  height 1.22rem
+  vertical-align top
+  margin 0 0.44rem 0 0
+  &:hover
+    color second-color
+
+.user-profile__info__social
+  margin 0.52rem auto 0 auto
+  & .user-profile__info__social_fb
+    font-weight bold
+    font-size 1.6rem
+    line-height 1.3rem
+    color dark-text-color
+    &:hover
+    &:active
+      color second-color
+  & .user-profile__info__social_twitter
+    background-icon "user_profile/social_icons/twitter_grey.svg" 97%
+    &:hover
+    &:active
+      background-icon "user_profile/social_icons/twitter_orange.svg" 97%
+  & .user-profile__info__social_dribbble
+    background-icon "user_profile/social_icons/dribbble_grey.svg" 85%
+    &:hover
+    &:active
+      background-icon "user_profile/social_icons/dribbble_orange.svg" 85%

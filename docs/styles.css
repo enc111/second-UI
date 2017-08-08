@@ -103,12 +103,16 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   color: #fff;
 }
 @font-face {
+  font-family: LatoRegular;
+  src: url(fonts/Lato/Lato-Regular.ttf), url(fonts/Lato/Lato-Regular.svg), url(fonts/Lato/Lato-Regular.woff);
+}
+@font-face {
   font-family: LatoBlack;
-  src: url(fonts/Lato-Black.ttf), url(fonts/Lato-Black.svg), url(fonts/Lato-Black.woff);
+  src: url(fonts/Lato/Lato-Black.ttf), url(fonts/Lato/Lato-Black.svg), url(fonts/Lato/Lato-Black.woff);
 }
 @font-face {
   font-family: LatoLight;
-  src: url(fonts/Lato-Light.ttf), url(fonts/Lato-Light.svg), url(fonts/Lato-Light.woff);
+  src: url(fonts/Lato/Lato-Light.ttf), url(fonts/Lato/Lato-Light.svg), url(fonts/Lato/Lato-Light.woff);
 }
 @font-face {
   font-family: SourceSansProRegular;
@@ -584,7 +588,7 @@ input[type='range']::-moz-range-track {
   color: #fff;
   background: #4eb7a8;
 }
-.form-elements> div:nth-of-type(2) {
+.form-elements > div:nth-of-type(2) {
   margin-right: 4rem;
   margin-bottom: 0;
 }
@@ -688,6 +692,7 @@ input[type='range']::-moz-range-track {
 }
 .search h1 {
   margin: 3.5rem auto 0.833rem auto;
+  word-spacing: 0.28rem;
 }
 .search__form {
   margin-bottom: 1rem;
@@ -820,7 +825,7 @@ input[type='range']::-moz-range-track {
   border-radius: 50%;
   background-color: transparent;
   border: 0.278rem solid #e5e5e5;
-  margin: 0 0.389rem 1.156rem 0;
+  margin: 0 0.61rem 1.156rem 0;
 }
 .user-profile_photo:first-of-type {
   background-image: url(user_profile/man1.png);
@@ -828,21 +833,154 @@ input[type='range']::-moz-range-track {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.user-profile div:nth-of-type(3) {
+.user-profile > div:nth-of-type(3) {
   background-image: url(user_profile/woman1.png);
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 .user-profile_photo,
-.user-profile_info {
+.user-profile__info {
   display: inline-block;
 }
-.user-profile_info {
+.user-profile__info {
   vertical-align: top;
   height: 5.22rem;
   width: 9.167rem;
   background: #e5e5e5;
+  border-radius: 0.4rem;
+  position: relative;
+}
+.user-profile__info:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  border: 0.34rem solid transparent;
+  border-right-color: #e5e5e5;
+  border-right-width: 0.44rem;
+  border-left: none;
+  top: 50%;
+  margin-top: -0.44rem;
+  left: -0.44rem;
+}
+.user-profile__info h3 {
+  font-family: LatoRegular;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0.61rem auto 0 auto;
+  font-weight: normal;
+  color: #757575;
+}
+.user-profile__info h4 {
+  font-weight: bold;
+  font-size: 0.61rem;
+  line-height: 0.61rem;
+  text-transform: uppercase;
+  margin: 0.22rem auto 0 auto;
+  color: #4f4f4f;
+}
+.user-profile__info:hover {
+  background: #4eb7a8;
+}
+.user-profile__info:hover:before {
+  border-right-color: #4eb7a8;
+}
+.user-profile__info:hover h3,
+.user-profile__info:hover h4 {
+  color: #fff;
+}
+.user-profile__info:hover .user-profile__info__social_fb {
+  color: #fff;
+}
+.user-profile__info:hover .user-profile__info__social_twitter {
+  background-image: url(user_profile/social_icons/twitter.svg);
+  background-size: 97%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info:hover .user-profile__info__social_dribbble {
+  background-image: url(user_profile/social_icons/dribbble.svg);
+  background-size: 85%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info:active {
+  background: #e5e5e5;
+}
+.user-profile__info:active:before {
+  border-right-color: #e5e5e5;
+}
+.user-profile__info:active h3 {
+  color: #e75735;
+}
+.user-profile__info:active h4 {
+  color: #757575;
+}
+.user-profile__info:active .user-profile__info__social_twitter {
+  background-image: url(user_profile/social_icons/twitter_grey.svg);
+  background-size: 97%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info:active .user-profile__info__social_dribbble {
+  background-image: url(user_profile/social_icons/dribbble_grey.svg);
+  background-size: 85%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info:active .user-profile__info__social_fb {
+  color: #757575;
+}
+.user-profile__info__social div {
+  display: inline-block;
+  width: 1.61rem;
+  height: 1.22rem;
+  vertical-align: top;
+  margin: 0 0.44rem 0 0;
+}
+.user-profile__info__social div:hover {
+  color: #e75735;
+}
+.user-profile__info__social {
+  margin: 0.52rem auto 0 auto;
+}
+.user-profile__info__social .user-profile__info__social_fb {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.3rem;
+  color: #757575;
+}
+.user-profile__info__social .user-profile__info__social_fb:hover,
+.user-profile__info__social .user-profile__info__social_fb:active {
+  color: #e75735;
+}
+.user-profile__info__social .user-profile__info__social_twitter {
+  background-image: url(user_profile/social_icons/twitter_grey.svg);
+  background-size: 97%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info__social .user-profile__info__social_twitter:hover,
+.user-profile__info__social .user-profile__info__social_twitter:active {
+  background-image: url(user_profile/social_icons/twitter_orange.svg);
+  background-size: 97%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info__social .user-profile__info__social_dribbble {
+  background-image: url(user_profile/social_icons/dribbble_grey.svg);
+  background-size: 85%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.user-profile__info__social .user-profile__info__social_dribbble:hover,
+.user-profile__info__social .user-profile__info__social_dribbble:active {
+  background-image: url(user_profile/social_icons/dribbble_orange.svg);
+  background-size: 85%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 @-moz-keyframes ripple-animation {
   from {
