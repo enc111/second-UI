@@ -153,13 +153,6 @@ h2 {
 .standard-buttons h1 {
   margin: 4.72rem 0 3.89rem 0;
 }
-.standard-buttons__table {
-  display: table;
-  text-align: center;
-  border-collapse: collapse;
-  border-width: 0;
-  margin: 0 auto 0 auto;
-}
 .standard-buttons ul {
   display: table-row;
 }
@@ -167,28 +160,17 @@ h2 {
   display: table-cell;
   vertical-align: bottom;
 }
+.standard-buttons__table {
+  display: table;
+  text-align: center;
+  border-collapse: collapse;
+  border-width: 0;
+  margin: 0 auto 0 auto;
+}
 .standard-buttons__table .standard-buttons__table_little {
   width: 4.33rem;
   height: 1.278rem;
   font-size: 0.56rem;
-}
-.standard-buttons li:first-of-type button,
-.standard-buttons li:nth-of-type(2) button {
-  background-color: #4eb7a8;
-  box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
-}
-.standard-buttons li:last-of-type button,
-.standard-buttons li:nth-of-type(3) button {
-  background-color: #e75735;
-  box-shadow: 0 0 0 1px #bf3e1f, 0 0.2rem 0 1px #bf3e1f;
-}
-.standard-buttons li:first-of-type button:hover,
-.standard-buttons li:nth-of-type(2) button:hover {
-  color: #4eb7a8;
-}
-.standard-buttons li:last-of-type button:hover,
-.standard-buttons li:nth-of-type(3) button:hover {
-  color: #e75735;
 }
 .standard-buttons__table ul li button {
   overflow: hidden;
@@ -215,14 +197,32 @@ h2 {
   color: #fff;
   background: none;
 }
-.standard-buttons li:last-of-type button:active,
-.standard-buttons li:nth-of-type(3) button:active {
-  background-color: #e75735;
-  color: #fff;
+.standard-buttons li:first-of-type button,
+.standard-buttons li:nth-of-type(2) button {
+  background-color: #4eb7a8;
+  box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
+}
+.standard-buttons li:first-of-type button:hover,
+.standard-buttons li:nth-of-type(2) button:hover {
+  color: #4eb7a8;
 }
 .standard-buttons li:first-of-type button:active,
 .standard-buttons li:nth-of-type(2) button:active {
   background-color: #4eb7a8;
+  color: #fff;
+}
+.standard-buttons li:last-of-type button,
+.standard-buttons li:nth-of-type(3) button {
+  background-color: #e75735;
+  box-shadow: 0 0 0 1px #bf3e1f, 0 0.2rem 0 1px #bf3e1f;
+}
+.standard-buttons li:last-of-type button:hover,
+.standard-buttons li:nth-of-type(3) button:hover {
+  color: #e75735;
+}
+.standard-buttons li:last-of-type button:active,
+.standard-buttons li:nth-of-type(3) button:active {
+  background-color: #e75735;
   color: #fff;
 }
 .arrow-buttons h1 {

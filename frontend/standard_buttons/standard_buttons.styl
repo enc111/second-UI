@@ -1,7 +1,13 @@
 @import "../mixins/button.styl"
 
-.standard-buttons h1
-  margin 4.72rem 0 3.89rem 0
+.standard-buttons
+  & h1
+    margin 4.72rem 0 3.89rem 0
+  & ul
+    display table-row
+  & li
+    display table-cell
+    vertical-align bottom
 
 .standard-buttons__table
   display table
@@ -9,48 +15,34 @@
   border-collapse collapse
   border-width 0
   margin 0 auto 0 auto
+  & .standard-buttons__table_little
+    width 4.33rem
+    height 1.278rem
+    font-size 0.56rem
+  & ul li button
+    button-appearance 6.5rem 1.778rem 0.67rem #ffffff
+    margin 0.556rem 0.639rem
+    font-family LatoBlack
 
-.standard-buttons ul
-  display table-row
+.standard-buttons
+  & li:first-of-type button
+  & li:nth-of-type(2) button
+    background-color first-color
+    button-shadow 0.2rem first-border-color
+    &:hover
+      color first-color
+    &:active
+      background-color first-color
+      color #ffffff
+  & li:last-of-type button
+  & li:nth-of-type(3) button
+    background-color second-color
+    button-shadow 0.2rem second-border-color
+    &:hover
+      color second-color
+    &:active
+      background-color second-color
+      color #ffffff
 
-.standard-buttons li
-  display table-cell
-  vertical-align bottom
 
-.standard-buttons__table .standard-buttons__table_little
-  width 4.33rem
-  height 1.278rem
-  font-size 0.56rem
-
-.standard-buttons li:first-of-type button
-.standard-buttons li:nth-of-type(2) button
-  background-color first-color
-  button-shadow 0.2rem first-border-color
-
-.standard-buttons li:last-of-type button
-.standard-buttons li:nth-of-type(3) button
-  background-color second-color
-  button-shadow 0.2rem second-border-color
-
-.standard-buttons li:first-of-type button:hover
-.standard-buttons li:nth-of-type(2) button:hover
-  color first-color
-
-.standard-buttons li:last-of-type button:hover
-.standard-buttons li:nth-of-type(3) button:hover
-  color second-color
-
-.standard-buttons__table ul li button
-  button-appearance 6.5rem 1.778rem 0.67rem #ffffff
-  margin 0.556rem 0.639rem
-  font-family LatoBlack
-
-.standard-buttons li:last-of-type button:active
-.standard-buttons li:nth-of-type(3) button:active
-  background-color second-color
-  color #ffffff
-.standard-buttons li:first-of-type button:active
-.standard-buttons li:nth-of-type(2) button:active
-  background-color first-color
-  color #ffffff
 
