@@ -251,6 +251,26 @@ h2 {
   border: 0.278rem solid #4eb7a8;
   box-sizing: border-box;
 }
+.arrow-buttons__circle:active .arrow-buttons__circle_arrow-left {
+  border: 0.278rem solid transparent;
+  border-left: 0.278rem solid #4eb7a8;
+  border-top: 0.278rem solid #4eb7a8;
+  -moz-transform: translateY(65%) rotate(-45deg);
+  -ms-transform: translateY(65%) rotate(-45deg);
+  -webkit-transform: translateY(65%) rotate(-45deg);
+  -o-transform: translateY(65%) rotate(-45deg);
+  transform: translateY(65%) rotate(-45deg);
+}
+.arrow-buttons__circle:active .arrow-buttons__circle_arrow-right {
+  border: 0.278rem solid transparent;
+  border-left: 0.278rem solid #4eb7a8;
+  border-top: 0.278rem solid #4eb7a8;
+  -moz-transform: translateY(65%) rotate(135deg);
+  -ms-transform: translateY(65%) rotate(135deg);
+  -webkit-transform: translateY(65%) rotate(135deg);
+  -o-transform: translateY(65%) rotate(135deg);
+  transform: translateY(65%) rotate(135deg);
+}
 .arrow-buttons__circle_arrow-left,
 .arrow-buttons__circle_arrow-right {
   width: 0.56rem;
@@ -267,16 +287,6 @@ h2 {
   transform: translateY(80%) rotate(-45deg);
   margin-left: 40%;
 }
-.arrow-buttons__circle:active .arrow-buttons__circle_arrow-left {
-  border: 0.278rem solid transparent;
-  border-left: 0.278rem solid #4eb7a8;
-  border-top: 0.278rem solid #4eb7a8;
-  -moz-transform: translateY(65%) rotate(-45deg);
-  -ms-transform: translateY(65%) rotate(-45deg);
-  -webkit-transform: translateY(65%) rotate(-45deg);
-  -o-transform: translateY(65%) rotate(-45deg);
-  transform: translateY(65%) rotate(-45deg);
-}
 .arrow-buttons__circle_arrow-right {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #fff;
@@ -287,16 +297,6 @@ h2 {
   -o-transform: translateY(80%) rotate(135deg);
   transform: translateY(80%) rotate(135deg);
   margin-left: 20%;
-}
-.arrow-buttons__circle:active .arrow-buttons__circle_arrow-right {
-  border: 0.278rem solid transparent;
-  border-left: 0.278rem solid #4eb7a8;
-  border-top: 0.278rem solid #4eb7a8;
-  -moz-transform: translateY(65%) rotate(135deg);
-  -ms-transform: translateY(65%) rotate(135deg);
-  -webkit-transform: translateY(65%) rotate(135deg);
-  -o-transform: translateY(65%) rotate(135deg);
-  transform: translateY(65%) rotate(135deg);
 }
 .percentages h1 {
   margin: 2.278rem auto 1.39rem auto;
@@ -697,13 +697,6 @@ input[type='range']::-moz-range-track {
   margin: 3.5rem auto 0.833rem auto;
   word-spacing: 0.28rem;
 }
-.search__form {
-  margin-bottom: 1rem;
-}
-.search__form,
-.search__dropdown-wrap {
-  position: relative;
-}
 .search select,
 .search input[type='search'] {
   height: 1.61rem;
@@ -752,6 +745,20 @@ input[type='range']::-moz-range-track {
   height: 1.61rem;
   width: 1.89rem;
 }
+.search select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #e5e5e5;
+  border-radius: 0.2rem;
+}
+.search__form {
+  margin-bottom: 1rem;
+}
+.search__form,
+.search__dropdown-wrap {
+  position: relative;
+}
 .search__form_not-found {
   background: #e75735;
   border-radius: 0.2rem;
@@ -773,13 +780,6 @@ input[type='range']::-moz-range-track {
   color: #fff;
   font-size: 0.78rem;
   font-weight: bolder;
-}
-.search select {
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: #e5e5e5;
-  border-radius: 0.2rem;
 }
 .search input[type='submit'],
 .search__dropdown-wrap:after {
@@ -1098,6 +1098,7 @@ input[type='range']::-moz-range-track {
 .location .location_map {
   width: 33rem;
   height: 15.22rem;
+  margin: 0 auto;
 }
 .calendar {
   display: inline-block;

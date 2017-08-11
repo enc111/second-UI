@@ -6,10 +6,32 @@ height-of-input=1.61rem
 .search
   display inline-block
   margin-right 2rem
-
-.search h1
-  margin 3.5rem auto 0.833rem auto
-  word-spacing 0.28rem
+  & h1
+    margin 3.5rem auto 0.833rem auto
+    word-spacing 0.28rem
+  & select
+  & input[type='search']
+    height height-of-input
+    width 14.606rem
+    padding 0 0.667rem
+    input-appearance-ph input-text-color
+  & input[type='search']
+    border none
+    overflow hidden
+    &:not(.search__form_not-found)
+      input-appearance input-text-color
+  & input[type='submit']
+    position absolute
+    top 0
+    right 0
+    background-color second-color
+    background-icon "search/search.svg" 40%
+    height height-of-input
+    width 1.89rem
+  & select
+    appearance1 none
+    background arrow-circle-color
+    border-radius 0.2rem
 
 .search__form
   margin-bottom 1rem
@@ -18,35 +40,8 @@ height-of-input=1.61rem
 .search__dropdown-wrap
   position relative
 
-.search select
-.search input[type='search']
-  height height-of-input
-  width 14.606rem
-  padding 0 0.667rem
-  input-appearance-ph input-text-color
-
-.search input[type='search']
-  border none
-  overflow hidden
-  &:not(.search__form_not-found)
-    input-appearance input-text-color
-
-.search input[type='submit']
-  position absolute
-  top 0
-  right 0
-  background-color second-color
-  background-icon "search/search.svg" 40%
-  height height-of-input
-  width 1.89rem
-
 .search__form_not-found
   input-appearance #ffffff second-color
-
-.search select
-  appearance1 none
-  background arrow-circle-color
-  border-radius 0.2rem
 
 .search input[type='submit']
 .search__dropdown-wrap:after
