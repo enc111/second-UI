@@ -9,6 +9,6 @@ $( document ).ready(function() {
     })
     .marker({
         position: [37.7912, -122.4151],
-        icon: 'location/marker.svg'
+        icon: require('./marker.png')
       });
 });
