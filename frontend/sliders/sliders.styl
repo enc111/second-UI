@@ -1,75 +1,68 @@
 @import "../mixins/appearance1.styl"
 
-.sliders h1
-  margin 1.7rem auto 2.22rem auto
-
-.sliders form
-  position relative
-  margin 0 auto
-  text-align left
+.sliders
+  & h1
+    margin 1.7rem auto 2.22rem auto
+  & form
+    position relative
+    margin 0 auto
+    text-align left
+  & input[type='range']
+    appearance1 none
+    outline none
+    height 0.35rem
+    width 14.44rem
+    border-radius 0.6rem
+    background arrow-circle-color
+    margin 0
+  & input[type='range']::-webkit-slider-thumb
+    -webkit-appearance none
+    outline none
+    cursor pointer
+  & input[type='range']::-moz-range-track
+    height 0
 
 .sliders__first
   margin-right 3.89rem
-
-.sliders__first output
-  position absolute
-  background-color second-color
-  width 2rem
-  height 1.39rem
-  text-align center
-  color white
-  border-radius 0.44rem
-  display inline-block
-  font LatoBlack 0.72rem
-  bottom 130%
-  left 0
-  &:after
-    content ""
+  & output
     position absolute
-    width 0
-    height 0
-    border-top 0.278rem solid second-color
-    border-left 0.139rem solid transparent
-    border-right 0.139rem solid transparent
-    top 100%
-    left 50%
-    margin-left -0.139rem
-    margin-top -0.056rem
-
-.sliders input[type='range']
-  appearance1 none
-  outline none
-  height 0.35rem
-  width 14.44rem
-  border-radius 0.6rem
-  background arrow-circle-color
-  margin 0
-  //padding 0
+    background-color second-color
+    width 2rem
+    height 1.39rem
+    text-align center
+    color white
+    border-radius 0.44rem
+    display inline-block
+    font LatoBlack 0.72rem
+    bottom 130%
+    left 0
+    &:after
+      content ""
+      position absolute
+      width 0
+      height 0
+      border-top 0.27rem solid second-color
+      border-left 0.27rem solid transparent
+      border-right 0.27rem solid transparent
+      border-bottom none
+      top 100%
+      left 50%
+      margin-left -0.169rem
+  & input[type='range']::-webkit-slider-thumb
+    circle 1.11rem second-color
+  & input[type='range']::-moz-range-thumb
+    circle 1.11rem second-color
+    border none
 
 .sliders__first_range1
   background arrow-circle-color
 
-input[type='range']::-webkit-slider-thumb
-  -webkit-appearance none
-  outline none
-  cursor pointer
-
-input[type='range']::-moz-range-track
-  height 0
-
-.sliders__first input[type='range']::-webkit-slider-thumb
-  circle 1.11rem second-color
-
-.sliders__first input[type='range']::-moz-range-thumb
-  circle 1.11rem second-color
-  border none
-
-.sliders__second input[type='range']::-webkit-slider-thumb
-  circle 1.11rem first-color
-
-.sliders__second input[type='range']::-moz-range-thumb
-  circle 1.11rem first-color
-  border none
+.sliders__second
+  & input[type='range']::-webkit-slider-thumb
+    circle 1.11rem first-color
+  & input[type='range']::-moz-range-thumb
+    circle 1.11rem first-color
+    border none
 
 .sliders__first
 .sliders__second
@@ -94,6 +87,5 @@ input[type='range']::-moz-range-track
   color pie-text-color
   position relative
   top 0
-
-.slider__ruler_number:last-of-type
-  margin-right 0  !important
+  &:last-of-type
+    margin-right 0  !important
