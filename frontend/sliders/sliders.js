@@ -1,3 +1,5 @@
+import * as $ from 'jquery'
+
 function sliderLine() {
     let sl = $('.sliders__second_range2');
     sl.css('background', 'linear-gradient(to right, #4eb7a8 0%, #4eb7a8 ' + sl.val() + '%, #e5e5e5 ' + sl.val() + '%, #e5e5e5 100%)');
