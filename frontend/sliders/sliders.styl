@@ -16,11 +16,17 @@
     background arrow-circle-color
     margin 0
   & input[type='range']::-webkit-slider-thumb
-    -webkit-appearance none
+    appearance1 none
     outline none
     cursor pointer
   & input[type='range']::-moz-range-track
     height 0
+  & input[type='range']::-ms-track
+    appearance1 none
+    background transparent
+    border-color transparent
+    color transparent
+    height 0.35rem
 
 .sliders__first
   margin-right 3.89rem
@@ -53,6 +59,16 @@
   & input[type='range']::-moz-range-thumb
     circle 1.11rem second-color
     border none
+  & input[type='range']::-ms-thumb
+    circle 1.11rem second-color
+  & input[type=range]::-ms-fill-lower
+    background-color transparent
+    height 0.35rem
+
+
+input[type=range]::-ms-tooltip
+	display: none;
+
 
 .sliders__first_range1
   background arrow-circle-color
@@ -63,6 +79,13 @@
   & input[type='range']::-moz-range-thumb
     circle 1.11rem first-color
     border none
+  & input[type='range']::-ms-thumb
+    circle 1.11rem first-color
+    border none
+  & input[type=range]::-ms-fill-lower
+    background-color: first-color;
+  & input[type=range]::-ms-fill-upper
+    background-color arrow-circle-color
 
 .sliders__first
 .sliders__second

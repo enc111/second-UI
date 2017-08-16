@@ -26453,18 +26453,19 @@ var multi = new __WEBPACK_IMPORTED_MODULE_1_chart_js___default.a(ctx, {
 
 /***/ }),
 /* 121 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {function sliderLine(slider) {
-    let sl = $(slider);
-    sl.css('background', 'linear-gradient(to right, #4eb7a8 0%, #4eb7a8 ' + sl.val() + '%, #e5e5e5 ' + sl.val() + '%, #e5e5e5 100%)');
-}
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
 
-function sliderOutput(slider) {
-    el = $(slider);
-    width = el.width();
-    newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
-    offset = -1.3;
+
+function sliderOutput(slider1) {
+    var el = __WEBPACK_IMPORTED_MODULE_0_jquery__( slider1 );
+    var width = el.width();
+    var newPoint = (el.val() - el.attr("min")) / (el.attr("max") - el.attr("min"));
+    var offset = -1.3;
+    var newPlace;
     if (newPoint < 0) { newPlace = 0;  }
     else if (newPoint > 1) { newPlace = width; }
     else { newPlace = width * newPoint + offset; offset -= newPoint;}//
@@ -26473,23 +26474,26 @@ function sliderOutput(slider) {
         marginLeft: offset + "%"
     }).text(el.val());
 }
-
-$( document ).ready(function() {
+function sliderLine(slider2){
+    var sl = __WEBPACK_IMPORTED_MODULE_0_jquery__(slider2);
+    sl.css('background', 'linear-gradient(to right, #4eb7a8 0%, #4eb7a8 ' + sl.val() + '%, #e5e5e5 ' + sl.val() + '%, #e5e5e5 100%)');
+}
+__WEBPACK_IMPORTED_MODULE_0_jquery__( document ).ready(function() {
 
     sliderOutput(".sliders__first_range1");
-    $(".sliders__first_range1").on('input', function() {
-        sliderOutput(this);
+    __WEBPACK_IMPORTED_MODULE_0_jquery__(".sliders__first_range1").on('input', function() {
+       sliderOutput(this);
     });
 
     sliderLine(".sliders__second_range2");
-    $(".sliders__second_range2").on('input', function () {
-        sliderLine(this);
+    __WEBPACK_IMPORTED_MODULE_0_jquery__(".sliders__second_range2").on('input', function () {
+       sliderLine(this);
     });
+
 });
 
 
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
 /* 122 */
@@ -39721,7 +39725,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__percentages_doughnut_chart_js__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__standard_buttons_standard_buttons_ripple_js__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sliders_sliders_js__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__sliders_sliders_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__sliders_sliders_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__vendor_jquery_progressbar_js__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__vendor_jquery_progressbar_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__vendor_jquery_progressbar_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__stages_stages_js__ = __webpack_require__(122);
