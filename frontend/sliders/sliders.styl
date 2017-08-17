@@ -64,6 +64,9 @@
   & input[type=range]::-ms-fill-lower
     background-color transparent
     height 0.35rem
+  & input[type=range]::-ms-fill-upper
+    background-color transparent
+    height 0.35rem
 
 
 input[type=range]::-ms-tooltip
@@ -83,9 +86,11 @@ input[type=range]::-ms-tooltip
     circle 1.11rem first-color
     border none
   & input[type=range]::-ms-fill-lower
-    background-color: first-color;
+    background-color first-color
+    height 0.35rem
   & input[type=range]::-ms-fill-upper
     background-color arrow-circle-color
+    height 0.35rem
 
 .sliders__first
 .sliders__second
