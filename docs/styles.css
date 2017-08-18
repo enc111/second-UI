@@ -1050,6 +1050,7 @@ input[type=range]::-ms-tooltip {
   height: 11.78rem;
   display: inline-block;
   text-align: left;
+  border-radius: 0.2rem;
 }
 .news-events__first p,
 .news-events__second p {
@@ -1145,6 +1146,7 @@ input[type=range]::-ms-tooltip {
 .location .location_map {
   margin: 0 auto;
   width: 33rem;
+  border-radius: 0.2rem 0.2rem 0 0;
 }
 .location .location__info {
   height: 3.89rem;
@@ -1152,6 +1154,7 @@ input[type=range]::-ms-tooltip {
   color: #fff;
   text-align: left;
   vertical-align: top;
+  border-radius: 0 0 0.2rem 0.2rem;
 }
 .location .location__info span {
   display: inline-block;
@@ -1161,20 +1164,20 @@ input[type=range]::-ms-tooltip {
   font-family: LatoLight;
   font-size: 1.67rem;
 }
-.location .location__info button {
+.location .location__info input[type='button'] {
   vertical-align: text-bottom;
   width: 1.5rem;
   height: 1.5rem;
   background-color: #e75735;
 }
-.location .location__info button:first-of-type {
+.location .location__info input[type='button']:first-of-type {
   background-image: url(location/location.svg);
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-right: 1rem;
 }
-.location .location__info button:nth-of-type(2) {
+.location .location__info input[type='button']:nth-of-type(2) {
   background-image: url(location/marker-icon.png);
   background-size: 77%;
   background-position: 50% 50%;
@@ -1192,6 +1195,10 @@ input[type=range]::-ms-tooltip {
 }
 .calendar h1 {
   margin: 2.72rem auto 1.389rem auto;
+}
+.calendar .calendar_date {
+  width: 15.56rem;
+  height: 21.22rem;
 }
 .messaging {
   display: inline-block;
