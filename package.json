@@ -1,15 +1,18 @@
 {
   "devDependencies": {
-	"webpack": "",
-	"jquery": "",
-	"html-webpack-plugin": "~2.28.0",
-	"pug": "",
-	"pug-loader": "~2.3.0",
-	"stylus": "",
-	"stylus-loader": "~3.0.1",
-	"file-loader": "",
-	"css-loader": "",
-	"extract-text-webpack-plugin": "",
-	"style-loader": ""
+    "webpack": "",
+    "jquery": "",
+    "html-webpack-plugin": "~2.28.0",
+    "pug": "",
+    "pug-loader": "~2.3.0",
+    "stylus": "",
+    "stylus-loader": "~3.0.1",
+    "file-loader": "",
+    "css-loader": "",
+    "extract-text-webpack-plugin": "",
+    "style-loader": ""
+  },
+  "dependencies": {
+    "moment": "^2.18.1"
   }
 }

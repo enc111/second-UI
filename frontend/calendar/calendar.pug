@@ -1,4 +1,11 @@
 mixin calendar()
     div.calendar
         h1 Calendar
-        div.calendar_date
+        div.calendar__content
+            div.clndr-controls
+                div.clndr-previous-button &lsaquo;
+                div.month <%= month %>
+                div.clndr-next-button &rsaquo;
+
+            div.clndr-grid
+                div.days-of-the-week
