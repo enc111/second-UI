@@ -1,11 +1,21 @@
 mixin calendar()
     div.calendar
         h1 Calendar
+        div.calendar__day-header
         div.calendar__content
-            div.clndr-controls
-                div.clndr-previous-button &lsaquo;
-                div.month <%= month %>
-                div.clndr-next-button &rsaquo;
-
-            div.clndr-grid
-                div.days-of-the-week
+            script#template-calendar(type='text/template')
+                div.clndr-controls
+                    div.clndr-previous-button &lsaquo;
+                    div.month <%= month %>
+                    div.clndr-next-button &rsaquo;
+                div.clndr-grid
+                    div.days-of-the-week
+                        <% _.each(daysOfTheWeek, function (day) { %>
+                        <div class="header-day"><%= day %></div>
+                        <% }); %>
+                        <div class="days">
+                        <% _.each(days, function (day) { %>
+                        <div class="<%= day.classes %>"><%= day.day %></div>
+                        <% }); %>
+                        </div>
+                div.clndr-today-button Today

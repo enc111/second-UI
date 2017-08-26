@@ -26400,21 +26400,28 @@ module.exports = function(module) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(179);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lodash__);
 
 
-$(document).ready(function() {
 
-    $('.clndr-controls').clndr({
 
+__WEBPACK_IMPORTED_MODULE_0_jquery__(document).ready(function() {
+
+    __WEBPACK_IMPORTED_MODULE_0_jquery__('.calendar__content').clndr({
+        template: __WEBPACK_IMPORTED_MODULE_0_jquery__('#template-calendar').html(),
         weekOffset: 1,
         daysOfTheWeek: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
     });
+    var curDay = __WEBPACK_IMPORTED_MODULE_0_jquery__('.today').text();
+    __WEBPACK_IMPORTED_MODULE_0_jquery__('.calendar__day-header').text(curDay);
+
 });
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
+
 
 /***/ }),
 /* 120 */

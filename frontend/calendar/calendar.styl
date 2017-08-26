@@ -3,6 +3,59 @@
   margin-right 1.5rem
   & h1
     margin 2.72rem auto 1.389rem auto
-  & .calendar_date
+  & .calendar__day-header
+    height 6.056rem
+    line-height 6.056rem
+    font-family LatoLight
+    font-size 4.44rem
+    color #ffffff
+    background second-color
+  & .calendar__content
     width 15.56rem
     height 21.22rem
+    & .clndr-controls
+      background second-border-color
+      color #ffffff
+      font-family LatoLight
+      font-size 1.33rem
+      height 2.5rem
+      line-height 2.5rem
+      & .clndr-next-button
+      & .clndr-previous-button
+        width 2.205rem
+        font-weight bold
+        font-size 1.4rem
+      & .month
+        width 11.11rem
+    & .clndr-grid
+      text-align center
+      display inline-block
+      & .days-of-the-week .header-day
+        float left
+        background second-color
+        height 1.61rem
+        width 2.205rem
+        line-height 1.61rem
+        font-size 0.5rem
+        color #ffffff
+      & .adjacent-month
+      & .empty
+        color #ffffff
+      & .day
+        font-family SourceSansProRegular
+        font-size 1.11rem
+        float: left;
+        width 2.205rem
+        height 2.205rem
+        border 1px solid #ffffff
+        box-sizing border-box
+        line-height 2.167rem
+        color input-text-color
+        background calendar-day-color
+      & .day.today
+        color #ffffff
+        background second-color
+
+.days-of-the-week > div
+.clndr-controls > div
+  display: inline-block;
