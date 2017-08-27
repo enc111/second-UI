@@ -26415,7 +26415,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery__(document).ready(function() {
     __WEBPACK_IMPORTED_MODULE_0_jquery__('.calendar__content').clndr({
         template: __WEBPACK_IMPORTED_MODULE_0_jquery__('#template-calendar').html(),
         weekOffset: 1,
-        daysOfTheWeek: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+        daysOfTheWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     });
     var curDay = __WEBPACK_IMPORTED_MODULE_0_jquery__('.today').text();
     __WEBPACK_IMPORTED_MODULE_0_jquery__('.calendar__day-header').text(curDay);

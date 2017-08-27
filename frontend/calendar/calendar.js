@@ -7,7 +7,7 @@ $(document).ready(function() {
     $('.calendar__content').clndr({
         template: $('#template-calendar').html(),
         weekOffset: 1,
-        daysOfTheWeek: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+        daysOfTheWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     });
     var curDay = $('.today').text();
     $('.calendar__day-header').text(curDay);

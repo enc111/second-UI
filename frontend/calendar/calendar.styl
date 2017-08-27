@@ -1,3 +1,4 @@
+day-width=2.2226rem
 .calendar
   display inline-block
   margin-right 1.5rem
@@ -12,8 +13,10 @@
     background second-color
   & .calendar__content
     width 15.56rem
-    height 21.22rem
+    height 17.84rem
+    position relative
     & .clndr-controls
+      display: inline-block;
       background second-border-color
       color #ffffff
       font-family LatoLight
@@ -22,7 +25,7 @@
       line-height 2.5rem
       & .clndr-next-button
       & .clndr-previous-button
-        width 2.205rem
+        width day-width
         font-weight bold
         font-size 1.4rem
       & .month
@@ -30,32 +33,46 @@
     & .clndr-grid
       text-align center
       display inline-block
-      & .days-of-the-week .header-day
-        float left
-        background second-color
-        height 1.61rem
-        width 2.205rem
-        line-height 1.61rem
-        font-size 0.5rem
-        color #ffffff
-      & .adjacent-month
-      & .empty
-        color #ffffff
-      & .day
-        font-family SourceSansProRegular
-        font-size 1.11rem
-        float: left;
-        width 2.205rem
-        height 2.205rem
-        border 1px solid #ffffff
-        box-sizing border-box
-        line-height 2.167rem
-        color input-text-color
-        background calendar-day-color
-      & .day.today
-        color #ffffff
-        background second-color
+      margin 0
+      & .days-of-the-week
+        height 12.72rem
+        & .header-day
+          float left
+          background second-color
+          height 1.61rem
+          width day-width
+          line-height 1.61rem
+          font-size 0.5rem
+          color #ffffff
+          text-transform uppercase
+        & .day
+          font-family SourceSansProRegular
+          font-size 1.11rem
+          float left
+          width day-width
+          height day-width
+          box-shadow 0 0 0 1px #ffffff
+          line-height day-width
+          color input-text-color
+          background calendar-day-color
+        & .adjacent-month
+        & .empty
+          color #ffffff
+        & .day.today
+          color #ffffff
+          background second-color
+    .clndr-today-button
+      text-transform uppercase
+      font-size 0.72rem
+      color input-text-color
+      padding-left 1.05rem
+      text-align left
+      background arrow-circle-color
+      height 2.72rem
+      line-height 2.72rem
+      position absolute
+      top 85.6%
+      width 14.51rem
 
-.days-of-the-week > div
 .clndr-controls > div
   display: inline-block;

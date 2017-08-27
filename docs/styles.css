@@ -1206,9 +1206,11 @@ input[type=range]::-ms-tooltip {
 }
 .calendar .calendar__content {
   width: 15.56rem;
-  height: 21.22rem;
+  height: 17.84rem;
+  position: relative;
 }
 .calendar .calendar__content .clndr-controls {
+  display: inline-block;
   background: #bf3e1f;
   color: #fff;
   font-family: LatoLight;
@@ -1218,7 +1220,7 @@ input[type=range]::-ms-tooltip {
 }
 .calendar .calendar__content .clndr-controls .clndr-next-button,
 .calendar .calendar__content .clndr-controls .clndr-previous-button {
-  width: 2.205rem;
+  width: 2.2226rem;
   font-weight: bold;
   font-size: 1.4rem;
 }
@@ -1228,37 +1230,53 @@ input[type=range]::-ms-tooltip {
 .calendar .calendar__content .clndr-grid {
   text-align: center;
   display: inline-block;
+  margin: 0;
+}
+.calendar .calendar__content .clndr-grid .days-of-the-week {
+  height: 12.72rem;
 }
 .calendar .calendar__content .clndr-grid .days-of-the-week .header-day {
   float: left;
   background: #e75735;
   height: 1.61rem;
-  width: 2.205rem;
+  width: 2.2226rem;
   line-height: 1.61rem;
   font-size: 0.5rem;
   color: #fff;
+  text-transform: uppercase;
 }
-.calendar .calendar__content .clndr-grid .adjacent-month,
-.calendar .calendar__content .clndr-grid .empty {
-  color: #fff;
-}
-.calendar .calendar__content .clndr-grid .day {
+.calendar .calendar__content .clndr-grid .days-of-the-week .day {
   font-family: SourceSansProRegular;
   font-size: 1.11rem;
   float: left;
-  width: 2.205rem;
-  height: 2.205rem;
-  border: 1px solid #fff;
-  box-sizing: border-box;
-  line-height: 2.167rem;
+  width: 2.2226rem;
+  height: 2.2226rem;
+  box-shadow: 0 0 0 1px #fff;
+  line-height: 2.2226rem;
   color: #747474;
   background: #f2f2f2;
 }
-.calendar .calendar__content .clndr-grid .day.today {
+.calendar .calendar__content .clndr-grid .days-of-the-week .adjacent-month,
+.calendar .calendar__content .clndr-grid .days-of-the-week .empty {
+  color: #fff;
+}
+.calendar .calendar__content .clndr-grid .days-of-the-week .day.today {
   color: #fff;
   background: #e75735;
 }
-.days-of-the-week > div,
+.calendar .calendar__content .clndr-today-button {
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: #747474;
+  padding-left: 1.05rem;
+  text-align: left;
+  background: #e5e5e5;
+  height: 2.72rem;
+  line-height: 2.72rem;
+  position: absolute;
+  top: 85.6%;
+  width: 14.51rem;
+}
 .clndr-controls > div {
   display: inline-block;
 }
