@@ -18,9 +18,17 @@
 
 @font-face
   font-family SourceSansProRegular
-  src url("fonts/SourceSansProRegular.ttf"),
-    url("fonts/SourceSansProRegular.svg"),
-    url("fonts/SourceSansProRegular.woff")
+  src url("fonts/SourceSansPro/SourceSansProRegular.ttf"),
+    url("fonts/SourceSansPro/SourceSansProRegular.svg"),
+    url("fonts/SourceSansPro/SourceSansProRegular.woff")
+
+@font-face
+  font-family SourceSansProLight
+  src url("fonts/SourceSansPro/SourceSansProLight.ttf"),
+    url("fonts/SourceSansPro/SourceSansProLight.svg"),
+    url("fonts/SourceSansPro/SourceSansProLight.woff")
+
+photo-size=4.67rem
 
 arrow-std-color=#ffffff
 arrow-circle-color=#e5e5e5
@@ -46,21 +54,16 @@ background-icon(path, n = 60%)
   background-position 50% 50%
   background-repeat no-repeat
 
-clearfix()
-  content ""
-  display block
-  clear both
-  visibility hidden
-  height 0
-
 html
   font-size 18px
 
 body
-  width 38.89rem
+  width 38.89rem//  heigth 187.22rem
   margin 0 auto
   text-align center
   font-family LatoBlack
+  & > div:last-of-type
+    padding-bottom 6.056rem
 
 *
   border none

@@ -1,3 +1,4 @@
-mixin video()
+mixin video(source)
     div.video
         h1 Video
+        iframe(src=source width="auto" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)

@@ -1,10 +1,11 @@
-day-width=2.2226rem
+day-width=2.22265rem
 .calendar
   display inline-block
   margin-right 1.5rem
   & h1
     margin 2.72rem auto 1.389rem auto
   & .calendar__day-header
+    border-radius 0.2rem 0.2rem 0 0
     height 6.056rem
     line-height 6.056rem
     font-family LatoLight
@@ -29,8 +30,10 @@ day-width=2.2226rem
         font-weight bold
         font-size 1.4rem
       & .month
-        width 11.11rem
+        width 11.115rem
     & .clndr-grid
+      width 100%
+      background second-color
       text-align center
       display inline-block
       margin 0
@@ -73,6 +76,7 @@ day-width=2.2226rem
       position absolute
       top 85.6%
       width 14.51rem
+      border-radius 0 0 0.2rem 0.2rem
 
 .clndr-controls > div
   display: inline-block;
