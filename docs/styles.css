@@ -115,6 +115,10 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   src: url(fonts/Lato/Lato-Light.ttf), url(fonts/Lato/Lato-Light.svg), url(fonts/Lato/Lato-Light.woff);
 }
 @font-face {
+  font-family: LatoBold;
+  src: url(fonts/Lato/Lato-Bold.ttf), url(fonts/Lato/Lato-Bold.svg), url(fonts/Lato/Lato-Bold.woff);
+}
+@font-face {
   font-family: SourceSansProRegular;
   src: url(fonts/SourceSansPro/SourceSansProRegular.ttf), url(fonts/SourceSansPro/SourceSansProRegular.svg), url(fonts/SourceSansPro/SourceSansProRegular.woff);
 }
@@ -1300,12 +1304,11 @@ input[type=range]::-ms-tooltip {
 }
 .messaging__block {
   width: 15.94rem;
-  height: 23.83rem;
 }
 .messaging__block__header {
   position: relative;
   width: 100%;
-  height: 27.28%;
+  height: 6.5rem;
   background: #28a290;
   border-radius: 0.2rem 0.2rem 0 0;
 }
@@ -1340,6 +1343,140 @@ input[type=range]::-ms-tooltip {
   height: 72.72%;
   background-color: #f2f2f2;
   border-radius: 0 0 0.2rem 0.2rem;
+}
+.messaging__block__body > div:first-of-type {
+  display: flex;
+  display: -ms-flexbox;
+  display: flexbox;
+  display: -webkit-box;
+  display: -moz-box-flex;
+  display: -webkit-flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+.messaging__block__body button {
+  overflow: hidden;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.67rem;
+  width: 13.5rem;
+  height: 1.78rem;
+  border-radius: 0.2rem;
+  background: #4eb7a8;
+  border: none;
+  box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
+  margin-bottom: 1.61rem;
+}
+.messaging__block__body button:hover {
+  background: #fff;
+  color: #4eb7a8;
+}
+.messaging__block__body button:active {
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: #4eb7a8;
+}
+.messaging__block__body_chat-icon,
+.messaging__block__body_camera-icon {
+  display: inline-block;
+  margin-top: 1.278rem;
+  background: #8e8d8d;
+  height: 0.889rem;
+  position: relative;
+  vertical-align: top;
+}
+.messaging__block__body_chat-icon {
+  margin-top: 1.22rem;
+  width: 1.11rem;
+  border-radius: 0.33rem;
+  margin-left: 1.5rem;
+}
+.messaging__block__body_chat-icon:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 48%;
+  top: 99%;
+  width: 0;
+  height: 0;
+  border: 0.33rem solid transparent;
+  border-bottom: none;
+  border-right: none;
+  border-top-color: #8e8d8d;
+}
+.messaging__block__body_camera-icon {
+  margin-top: 1.389rem;
+  width: 1.33rem;
+  margin-right: 1.5rem;
+}
+.messaging__block__body_camera-icon:before,
+.messaging__block__body_camera-icon:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+}
+.messaging__block__body_camera-icon:after {
+  width: 0.61rem;
+  height: 0.167rem;
+  margin-left: -0.305rem;
+  margin-top: -0.167rem;
+  background: inherit;
+}
+.messaging__block__body_camera-icon:before {
+  width: 0.61rem;
+  height: 0.61rem;
+  border-radius: 50%;
+  background-color: inherit;
+  top: 50%;
+  margin-top: -0.305rem;
+  margin-left: -0.305rem;
+  border: 0.12rem solid #fff;
+  box-sizing: border-box;
+}
+.messaging__block__body_first-inbox-msg {
+  position: relative;
+  margin: 1.22rem auto 1rem auto;
+  background: #fff;
+}
+.messaging__block__body_first-inbox-msg:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.33rem solid transparent;
+  border-top: none;
+  border-bottom-color: #fff;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -0.33rem;
+}
+.messaging__block__body_first-inbox-msg,
+.messaging__block__body_second-sending-msg {
+  width: 11.28rem;
+  padding: 0.95rem 1.11rem 1.11rem;
+  border-radius: 0.33rem;
+}
+.messaging__block__body_first-inbox-msg p,
+.messaging__block__body_second-sending-msg p {
+  font-family: LatoBold;
+  text-align: left;
+  font-size: 0.72rem;
+  color: #8e8d8d;
+}
+.messaging__block__body_second-sending-msg {
+  margin: auto auto 0.78rem;
+  box-shadow: inset 0 0 0 0.167rem #fff;
+}
+.messaging__block__body_second-sending-msg p {
+  margin-bottom: 1rem;
 }
 .video h1 {
   margin: 2.78rem auto 1.278rem auto;

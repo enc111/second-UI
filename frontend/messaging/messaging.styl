@@ -3,14 +3,14 @@
   vertical-align top
   & h1
     margin 2.72rem auto 1.389rem auto
+
 .messaging__block
   width 15.94rem
-  height 23.83rem
-
+ // height 23.83rem
 .messaging__block__header
   position relative
   width 100%
-  height 27.28%
+  height 6.5rem//27.28%
   background first-border-color
   border-radius 0.2rem 0.2rem 0 0
   &:after
@@ -37,3 +37,105 @@
   height 72.72%
   background-color calendar-day-color
   border-radius 0 0 0.2rem 0.2rem
+  & > div:first-of-type
+    display flex
+    display -ms-flexbox
+    display flexbox//
+    display -webkit-box//
+    display -moz-box-flex//
+    display -webkit-flex//
+    -webkit-box-pack justify//
+    -moz-box-pack justify//
+    -webkit-justify-content space-between//
+    justify-content space-between
+    -ms-flex-pack justify
+  & button
+    button-appearance 13.5rem 1.78rem 0.67rem #ffffff first-color
+    button-shadow 0.2rem first-border-color
+    margin-bottom 1.61rem
+
+.messaging__block__body_chat-icon
+.messaging__block__body_camera-icon
+  display inline-block
+  margin-top 1.278rem
+  background message-icon-color
+  height 0.889rem
+  position relative
+  vertical-align top
+
+.messaging__block__body_chat-icon
+  margin-top 1.22rem
+  width 1.11rem
+  border-radius 0.33rem
+  margin-left 1.5rem
+  &:after
+    content''
+    display inline-block
+    position absolute
+    left 48%
+    top 99%
+    width 0
+    height 0
+    border 0.33rem solid transparent
+    border-bottom none
+    border-right none
+    border-top-color message-icon-color
+
+.messaging__block__body_camera-icon
+  margin-top 1.389rem
+  width 1.33rem
+  margin-right 1.5rem
+  &:before
+  &:after
+    content ''
+    display inline-block
+    position absolute
+    left 50%
+  &:after
+    width 0.61rem
+    height 0.167rem
+    margin-left (-0.61/2)rem
+    margin-top -0.167rem
+    background inherit
+  &:before
+    circle 0.61rem inherit
+    top 50%
+    margin-top (-0.61/2)rem
+    margin-left (-0.61/2)rem
+    border 0.12rem solid #ffffff
+    box-sizing border-box
+
+.messaging__block__body_first-inbox-msg
+  position relative
+  margin 1.22rem auto 1rem auto
+  background #ffffff
+  &:before
+    content ''
+    display inline-block
+    position absolute
+    width 0
+    height 0
+    border 0.33rem solid transparent
+    border-top none
+    border-bottom-color #ffffff
+    bottom 100%
+    left 50%
+    margin-left -0.33rem
+
+.messaging__block__body_first-inbox-msg
+.messaging__block__body_second-sending-msg
+  width 11.28rem
+  padding 0.95rem 1.11rem 1.11rem
+  border-radius 0.33rem
+  & p
+    font-family LatoBold
+    text-align left
+    font-size 0.72rem
+    color message-icon-color
+
+.messaging__block__body_second-sending-msg
+  margin auto auto 0.78rem
+  box-shadow inset 0 0 0 0.167rem #ffffff
+  & p
+    margin-bottom 1rem
+
