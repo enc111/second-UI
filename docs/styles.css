@@ -149,7 +149,8 @@ body > div:last-of-type {
 h1,
 h2 {
   font-size: 1rem;
-  word-spacing: 0.61rem;
+  word-spacing: 0.25rem;
+  letter-spacing: 0.07rem;
   text-transform: uppercase;
   color: #4f4f4f;
 }
@@ -162,7 +163,7 @@ h2 {
   animation: ripple-animation 2s;
 }
 .standard-buttons h1 {
-  margin: 4.72rem 0 3.89rem 0;
+  margin: 4.52rem auto 3.2rem auto;
 }
 .standard-buttons ul {
   display: table-row;
@@ -179,8 +180,8 @@ h2 {
   margin: 0 auto 0 auto;
 }
 .standard-buttons__table .standard-buttons__table_little {
-  width: 4.33rem;
-  height: 1.278rem;
+  width: 4.15rem;
+  height: 1.05rem;
   font-size: 0.56rem;
 }
 .standard-buttons__table ul li button {
@@ -189,12 +190,12 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.67rem;
-  width: 6.5rem;
-  height: 1.778rem;
+  width: 6.4rem;
+  height: 1.62rem;
   border-radius: 0.2rem;
   background: none;
   border: none;
-  margin: 0.556rem 0.639rem;
+  margin: 0.66rem 0.75rem;
   font-family: LatoBlack;
 }
 .standard-buttons__table ul li button:hover {
@@ -1304,6 +1305,7 @@ input[type=range]::-ms-tooltip {
 }
 .messaging__block {
   width: 15.94rem;
+  height: 23.83rem;
 }
 .messaging__block__header {
   position: relative;
