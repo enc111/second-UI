@@ -6,7 +6,7 @@ var multi = new Chart(ctx, {
     type: 'doughnut',
     data: {
         datasets: [{
-            data: [12, 20, 20, 30],
+            data: [9, 22, 27, 30],
             backgroundColor: [
                 '#747474',
                 '#e75735',
@@ -17,6 +17,6 @@ var multi = new Chart(ctx, {
         }]
     },
     options: {
-        cutoutPercentage: 60
+        cutoutPercentage: 62
     }
 });

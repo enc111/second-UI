@@ -7,17 +7,18 @@ arrow(size, degr, vert, color = #ffffff)
   transform2 translateY(vert), rotate(degr)
 
 .arrow-buttons h1
-  margin 2.5rem auto 2.056rem auto
+  margin 2.5rem auto 1.94rem auto
 
 .arrow-buttons__circle
   display inline-block
-  circle 2.89rem arrow-circle-color
-  margin 0 auto
-  margin-right 1.44rem
+  circle 2.72rem arrow-circle-color
+  margin 0 1.41rem 0 auto//  margin-right 1.4rem
+  &:last-of-type
+    margin-right auto
   &:hover
-    circle 2.89rem first-color
+    background first-color
   &:active
-    circle 2.89rem #ffffff
+    background #ffffff
     border 0.278rem solid first-color
     box-sizing border-box
     & .arrow-buttons__circle_arrow-left

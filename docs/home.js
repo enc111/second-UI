@@ -26461,10 +26461,10 @@ __WEBPACK_IMPORTED_MODULE_0_jquery__( document ).ready(function() {
 
 
 __WEBPACK_IMPORTED_MODULE_0_jquery__( document ).ready(function() { // 6,32 5,38 2,34
-    __WEBPACK_IMPORTED_MODULE_0_jquery__(".percentages .pie").each(function(index) {
+    __WEBPACK_IMPORTED_MODULE_0_jquery__(".percentages_pie").each(function(index) {
             __WEBPACK_IMPORTED_MODULE_0_jquery__("#"+__WEBPACK_IMPORTED_MODULE_0_jquery__(this).attr('id')).circliful({
                 animation: 0,
-                foregroundBorderWidth: 80,
+                foregroundBorderWidth: 78,
                 foregroundColor: '#e75735',
                 backgroundBorderWidth: 0,
                 percent: Number(this.id),
@@ -26495,7 +26495,7 @@ var multi = new __WEBPACK_IMPORTED_MODULE_1_chart_js___default.a(ctx, {
     type: 'doughnut',
     data: {
         datasets: [{
-            data: [12, 20, 20, 30],
+            data: [9, 22, 27, 30],
             backgroundColor: [
                 '#747474',
                 '#e75735',
@@ -26506,7 +26506,7 @@ var multi = new __WEBPACK_IMPORTED_MODULE_1_chart_js___default.a(ctx, {
         }]
     },
     options: {
-        cutoutPercentage: 60
+        cutoutPercentage: 62
     }
 });
 
