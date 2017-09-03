@@ -2,7 +2,7 @@
 
 .sliders
   & h1
-    margin 1.7rem auto 2.22rem auto
+    margin 1.85rem auto 1.85rem auto
   & form
     position relative
     margin 0 auto
@@ -10,11 +10,11 @@
   & input[type='range']
     appearance1 none
     outline none
-    height 0.35rem
+    height 0.3rem
     width 14.44rem
     border-radius 0.6rem
     background arrow-circle-color
-    margin 0
+    margin 0 auto
   & input[type='range']::-webkit-slider-thumb
     appearance1 none
     outline none
@@ -26,34 +26,36 @@
     background transparent
     border-color transparent
     color transparent
-    height 0.35rem
+    height 0.3rem
 
 .sliders__first
-  margin-right 3.89rem
+  margin-right 3.88rem
   & output
     position absolute
     background-color second-color
     width 2rem
     height 1.39rem
+    line-height 1.39rem
     text-align center
     color white
-    border-radius 0.44rem
+    border-radius 0.32rem
     display inline-block
-    font LatoBlack 0.72rem
-    bottom 130%
+    font-family LatoBlack
+    font-size 0.72rem
+    bottom 110%
     left 0
     &:after
       content ""
       position absolute
       width 0
       height 0
-      border-top 0.27rem solid second-color
-      border-left 0.27rem solid transparent
-      border-right 0.27rem solid transparent
+      border-top 0.25rem solid second-color
+      border-left 0.25rem solid transparent
+      border-right 0.25rem solid transparent
       border-bottom none
       top 100%
       left 50%
-      margin-left -0.169rem
+      margin-left -0.25rem
   & input[type='range']::-webkit-slider-thumb
     circle 1.11rem second-color
   & input[type='range']::-moz-range-thumb
@@ -63,15 +65,13 @@
     circle 1.11rem second-color
   & input[type=range]::-ms-fill-lower
     background-color transparent
-    height 0.35rem
+    height 0.3rem
   & input[type=range]::-ms-fill-upper
     background-color transparent
-    height 0.35rem
-
+    height 0.3rem
 
 input[type=range]::-ms-tooltip
 	display: none;
-
 
 .sliders__first_range1
   background arrow-circle-color
@@ -87,10 +87,10 @@ input[type=range]::-ms-tooltip
     border none
   & input[type=range]::-ms-fill-lower
     background-color first-color
-    height 0.35rem
+    height 0.3rem
   & input[type=range]::-ms-fill-upper
     background-color arrow-circle-color
-    height 0.35rem
+    height 0.3rem
 
 .sliders__first
 .sliders__second
@@ -117,3 +117,5 @@ input[type=range]::-ms-tooltip
   top 0
   &:last-of-type
     margin-right 0  !important
+  &:first-of-type
+    margin-left -0.5rem !important

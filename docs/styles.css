@@ -37,7 +37,7 @@ svg .icon {
     font-family: FontAwesome;
 }
 ul.progressbar {
-  height: 1.67rem;
+  height: 1.65rem;
   padding: 0;
   counter-reset: step;
   margin: 0;
@@ -59,9 +59,9 @@ ul.progressbar li:before {
   padding: 0;
   margin: 0;
   color: #9d9d9d;
-  width: 1.67rem;
-  height: 1.67rem;
-  line-height: 1.67rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  line-height: 1.65rem;
   border-radius: 50%;
   display: block;
   text-align: center;
@@ -76,6 +76,7 @@ ul.progressbar li:after {
   width: 100%;
   height: 0.33rem;
   top: 50%;
+  margin-top: -0.165rem;
   right: -1%;
   z-index: -1;
 }
@@ -342,7 +343,7 @@ h2 {
   padding: 0;
 }
 .sliders h1 {
-  margin: 1.7rem auto 2.22rem auto;
+  margin: 1.85rem auto 1.85rem auto;
 }
 .sliders form {
   position: relative;
@@ -354,11 +355,11 @@ h2 {
   -moz-appearance: none;
   -webkit-appearance: none;
   outline: none;
-  height: 0.35rem;
+  height: 0.3rem;
   width: 14.44rem;
   border-radius: 0.6rem;
   background: #e5e5e5;
-  margin: 0;
+  margin: 0 auto;
 }
 .sliders input[type='range']::-webkit-slider-thumb {
   appearance: none;
@@ -377,22 +378,24 @@ h2 {
   background: transparent;
   border-color: transparent;
   color: transparent;
-  height: 0.35rem;
+  height: 0.3rem;
 }
 .sliders__first {
-  margin-right: 3.89rem;
+  margin-right: 3.88rem;
 }
 .sliders__first output {
   position: absolute;
   background-color: #e75735;
   width: 2rem;
   height: 1.39rem;
+  line-height: 1.39rem;
   text-align: center;
   color: #fff;
-  border-radius: 0.44rem;
+  border-radius: 0.32rem;
   display: inline-block;
-  font: LatoBlack 0.72rem;
-  bottom: 130%;
+  font-family: LatoBlack;
+  font-size: 0.72rem;
+  bottom: 110%;
   left: 0;
 }
 .sliders__first output:after {
@@ -400,13 +403,13 @@ h2 {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 0.27rem solid #e75735;
-  border-left: 0.27rem solid transparent;
-  border-right: 0.27rem solid transparent;
+  border-top: 0.25rem solid #e75735;
+  border-left: 0.25rem solid transparent;
+  border-right: 0.25rem solid transparent;
   border-bottom: none;
   top: 100%;
   left: 50%;
-  margin-left: -0.169rem;
+  margin-left: -0.25rem;
 }
 .sliders__first input[type='range']::-webkit-slider-thumb {
   width: 1.11rem;
@@ -429,11 +432,11 @@ h2 {
 }
 .sliders__first input[type=range]::-ms-fill-lower {
   background-color: transparent;
-  height: 0.35rem;
+  height: 0.3rem;
 }
 .sliders__first input[type=range]::-ms-fill-upper {
   background-color: transparent;
-  height: 0.35rem;
+  height: 0.3rem;
 }
 input[type=range]::-ms-tooltip {
   display: none;
@@ -463,11 +466,11 @@ input[type=range]::-ms-tooltip {
 }
 .sliders__second input[type=range]::-ms-fill-lower {
   background-color: #4eb7a8;
-  height: 0.35rem;
+  height: 0.3rem;
 }
 .sliders__second input[type=range]::-ms-fill-upper {
   background-color: #e5e5e5;
-  height: 0.35rem;
+  height: 0.3rem;
 }
 .sliders__first,
 .sliders__second {
@@ -496,15 +499,19 @@ input[type=range]::-ms-tooltip {
 .slider__ruler_number:last-of-type {
   margin-right: 0 !important;
 }
+.slider__ruler_number:first-of-type {
+  margin-left: -0.5rem !important;
+}
 .stages h1 {
-  margin: 3.11rem auto 1.44rem auto;
+  margin: 3rem auto 1.4rem auto;
 }
 #steps {
-  width: 33.056rem;
+  width: 33.33rem;
   margin: 0 auto;
+  margin-right: auto;
 }
 .form-elements h1 {
-  margin: 2.72rem auto 2.5rem auto;
+  margin: 2.94rem auto 2.64rem auto;
 }
 .form-elements h2 {
   margin: 0 auto 1.72rem auto;
