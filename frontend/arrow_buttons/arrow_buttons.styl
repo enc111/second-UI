@@ -22,9 +22,10 @@ arrow(size, degr, vert, color = #ffffff)
     border 0.278rem solid first-color
     box-sizing border-box
     & .arrow-buttons__circle_arrow-left
-      arrow 0.278rem -45deg 65% first-color
+      arrow 0.278rem -45deg 53% first-color
     & .arrow-buttons__circle_arrow-right
-      arrow 0.278rem 135deg 65% first-color
+      arrow 0.278rem 135deg 53% first-color
+      margin-left 10%
 
 .arrow-buttons__circle_arrow-left
 .arrow-buttons__circle_arrow-right
@@ -32,9 +33,11 @@ arrow(size, degr, vert, color = #ffffff)
   height 0.56rem
 
 .arrow-buttons__circle_arrow-left
-  arrow 0.278rem -45deg 80%
+  arrow 0.278rem -45deg 70%
   margin-left 40%
 
 .arrow-buttons__circle_arrow-right
-  arrow 0.278rem 135deg 80%
+  arrow 0.278rem 135deg 70%
   margin-left 20%
+  &:active
+    margin-left 10%

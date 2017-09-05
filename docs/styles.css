@@ -151,7 +151,7 @@ h1,
 h2 {
   font-size: 1rem;
   word-spacing: 0.23rem;
-  letter-spacing: 0.068rem;
+  letter-spacing: 0.057rem;
   text-transform: uppercase;
   color: #4f4f4f;
 }
@@ -264,21 +264,22 @@ h2 {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #4eb7a8;
   border-top: 0.278rem solid #4eb7a8;
-  -moz-transform: translateY(65%) rotate(-45deg);
-  -ms-transform: translateY(65%) rotate(-45deg);
-  -webkit-transform: translateY(65%) rotate(-45deg);
-  -o-transform: translateY(65%) rotate(-45deg);
-  transform: translateY(65%) rotate(-45deg);
+  -moz-transform: translateY(53%) rotate(-45deg);
+  -ms-transform: translateY(53%) rotate(-45deg);
+  -webkit-transform: translateY(53%) rotate(-45deg);
+  -o-transform: translateY(53%) rotate(-45deg);
+  transform: translateY(53%) rotate(-45deg);
 }
 .arrow-buttons__circle:active .arrow-buttons__circle_arrow-right {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #4eb7a8;
   border-top: 0.278rem solid #4eb7a8;
-  -moz-transform: translateY(65%) rotate(135deg);
-  -ms-transform: translateY(65%) rotate(135deg);
-  -webkit-transform: translateY(65%) rotate(135deg);
-  -o-transform: translateY(65%) rotate(135deg);
-  transform: translateY(65%) rotate(135deg);
+  -moz-transform: translateY(53%) rotate(135deg);
+  -ms-transform: translateY(53%) rotate(135deg);
+  -webkit-transform: translateY(53%) rotate(135deg);
+  -o-transform: translateY(53%) rotate(135deg);
+  transform: translateY(53%) rotate(135deg);
+  margin-left: 10%;
 }
 .arrow-buttons__circle_arrow-left,
 .arrow-buttons__circle_arrow-right {
@@ -289,23 +290,26 @@ h2 {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #fff;
   border-top: 0.278rem solid #fff;
-  -moz-transform: translateY(80%) rotate(-45deg);
-  -ms-transform: translateY(80%) rotate(-45deg);
-  -webkit-transform: translateY(80%) rotate(-45deg);
-  -o-transform: translateY(80%) rotate(-45deg);
-  transform: translateY(80%) rotate(-45deg);
+  -moz-transform: translateY(70%) rotate(-45deg);
+  -ms-transform: translateY(70%) rotate(-45deg);
+  -webkit-transform: translateY(70%) rotate(-45deg);
+  -o-transform: translateY(70%) rotate(-45deg);
+  transform: translateY(70%) rotate(-45deg);
   margin-left: 40%;
 }
 .arrow-buttons__circle_arrow-right {
   border: 0.278rem solid transparent;
   border-left: 0.278rem solid #fff;
   border-top: 0.278rem solid #fff;
-  -moz-transform: translateY(80%) rotate(135deg);
-  -ms-transform: translateY(80%) rotate(135deg);
-  -webkit-transform: translateY(80%) rotate(135deg);
-  -o-transform: translateY(80%) rotate(135deg);
-  transform: translateY(80%) rotate(135deg);
+  -moz-transform: translateY(70%) rotate(135deg);
+  -ms-transform: translateY(70%) rotate(135deg);
+  -webkit-transform: translateY(70%) rotate(135deg);
+  -o-transform: translateY(70%) rotate(135deg);
+  transform: translateY(70%) rotate(135deg);
   margin-left: 20%;
+}
+.arrow-buttons__circle_arrow-right:active {
+  margin-left: 10%;
 }
 .percentages h1 {
   margin: 2.36rem auto 1.1rem auto;
@@ -511,10 +515,10 @@ input[type=range]::-ms-tooltip {
   margin-right: auto;
 }
 .form-elements h1 {
-  margin: 2.94rem auto 2.64rem auto;
+  margin: 2.94rem auto 2.67rem auto;
 }
 .form-elements h2 {
-  margin: 0 auto 1.72rem auto;
+  margin: -0.2rem auto 1.72rem auto;
 }
 .form-elements h2:nth-of-type(2) {
   margin-top: 2rem;
@@ -538,7 +542,7 @@ input[type=range]::-ms-tooltip {
   text-align: left;
 }
 [class^='form-elements__form_'] {
-  margin: 0 0 0.78rem 0;
+  margin: 0 0 0.66rem 0;
   vertical-align: middle;
   border: none;
   overflow: hidden;
@@ -627,7 +631,7 @@ input[type=range]::-ms-tooltip {
 .form-elements__form_message {
   width: 14.606rem;
   height: 3.6rem;
-  padding: 0.667rem;
+  padding: 0.52rem 0.667rem 0.667rem;
   resize: none;
 }
 .form-elements__form_submit {
@@ -636,8 +640,8 @@ input[type=range]::-ms-tooltip {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.67rem;
-  width: 6.5rem;
-  height: 1.778rem;
+  width: 6.4rem;
+  height: 1.65rem;
   border-radius: 0.2rem;
   background: #4eb7a8;
   border: none;
@@ -760,13 +764,13 @@ input[type=range]::-ms-tooltip {
   margin-right: 2rem;
 }
 .search h1 {
-  margin: 3.5rem auto 0.833rem auto;
-  word-spacing: 0.28rem;
+  margin: 3.5rem auto 1.1rem auto;
+  word-spacing: 0.028rem;
 }
 .search select,
 .search input[type='search'] {
-  height: 1.61rem;
-  width: 14.606rem;
+  height: 1.54rem;
+  width: 15.906rem;
   padding: 0 0.667rem;
   font-family: SourceSansProRegular;
   color: #747474;
@@ -808,7 +812,7 @@ input[type=range]::-ms-tooltip {
   background-size: 40%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 1.61rem;
+  height: 1.54rem;
   width: 1.89rem;
 }
 .search select {
@@ -819,7 +823,7 @@ input[type=range]::-ms-tooltip {
   border-radius: 0.2rem;
 }
 .search__form {
-  margin-bottom: 1rem;
+  margin-bottom: 0.93rem;
 }
 .search__form,
 .search__dropdown-wrap {
@@ -862,7 +866,7 @@ input[type=range]::-ms-tooltip {
   top: 0;
   right: 0;
   background: #4eb7a8;
-  height: 1.61rem;
+  height: 1.54rem;
   width: 1.89rem;
   z-index: 1;
 }
@@ -886,7 +890,10 @@ input[type=range]::-ms-tooltip {
   vertical-align: top;
 }
 .user-profile h1 {
-  margin: 3.5rem auto 1.94rem auto;
+  margin: 3.5rem auto 1.64rem auto;
+}
+.user-profile br {
+  line-height: 1.4rem;
 }
 .user-profile_photo {
   width: 4.67rem;
@@ -894,7 +901,7 @@ input[type=range]::-ms-tooltip {
   border-radius: 50%;
   background-color: transparent;
   border: 0.278rem solid #e5e5e5;
-  margin: 0 0.61rem 1.156rem 0;
+  margin: -0.1rem 0.61rem 1.156rem 0;
 }
 .user-profile_photo:first-of-type {
   background-image: url(user_profile/man1.png);
@@ -1017,7 +1024,7 @@ input[type=range]::-ms-tooltip {
   color: #e75735;
 }
 .user-profile__info__social {
-  margin: 0.52rem auto 0 auto;
+  margin: 0.72rem auto 0 auto;
 }
 .user-profile__info__social .user-profile__info__social_fb {
   font-weight: bold;

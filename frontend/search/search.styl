@@ -1,18 +1,18 @@
 @import "../mixins/input-appearance.styl"
 @import "../mixins/appearance1.styl"
 
-height-of-input=1.61rem
+height-of-input=1.54rem
 
 .search
   display inline-block
   margin-right 2rem
   & h1
-    margin 3.5rem auto 0.833rem auto
-    word-spacing 0.28rem
+    margin 3.5rem auto 1.1rem auto
+    word-spacing 0.028rem
   & select
   & input[type='search']
     height height-of-input
-    width 14.606rem
+    width 15.906rem
     padding 0 0.667rem
     input-appearance-ph input-text-color
   & input[type='search']
@@ -34,11 +34,12 @@ height-of-input=1.61rem
     border-radius 0.2rem
 
 .search__form
-  margin-bottom 1rem
+  margin-bottom 0.93rem
 
 .search__form
 .search__dropdown-wrap
   position relative
+  //margin-right 2rem
 
 .search__form_not-found
   input-appearance #ffffff second-color

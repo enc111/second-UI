@@ -1,20 +1,7 @@
+include ../mixins/profile
 mixin user-profile()
     div.user-profile
         h1 User profile
-        div.user-profile_photo
-        div.user-profile__info
-            h3 John Smith
-            h4 Ux designer
-            div.user-profile__info__social
-                div.user-profile__info__social_fb f
-                div.user-profile__info__social_twitter
-                div.user-profile__info__social_dribbble
+        +profile('John Smith', 'Ux designer')
         br
-        div.user-profile_photo
-        div.user-profile__info
-            h3 Sarah Brown
-            h4 Developer
-            div.user-profile__info__social
-                div.user-profile__info__social_fb f
-                div.user-profile__info__social_twitter
-                div.user-profile__info__social_dribbble
+        +profile('Sarah Brown', 'Developer')
