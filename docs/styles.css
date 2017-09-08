@@ -1189,45 +1189,51 @@ input[type=range]::-ms-tooltip {
   border-radius: 0.2rem 0.2rem 0 0;
 }
 .location .location__info {
+  display: flex;
+  justify-content: space-between;
   height: 3.84rem;
   background: #e75735;
   color: #fff;
   text-align: left;
-  vertical-align: top;
+  vertical-align: middle;
   border-radius: 0 0 0.2rem 0.2rem;
 }
-.location .location__info span {
+.location .location__info div:last-of-type {
+  margin-right: 1.2rem;
+}
+.location .location__info div span {
   display: inline-block;
 }
-.location .location__info span:first-of-type {
-  margin: 0.7rem 1.56rem auto 1.5rem;
+.location .location__info div span:first-of-type {
+  margin: 0.61rem 1.34rem auto 1.5rem;
   font-family: LatoLight;
   font-size: 1.67rem;
 }
-.location .location__info input[type='button'] {
-  vertical-align: text-bottom;
+.location .location__info div input[type='button'] {
+  margin-top: 1rem;
   width: 1.5rem;
   height: 1.5rem;
   background-color: #e75735;
 }
-.location .location__info input[type='button']:first-of-type {
+.location .location__info div input[type='button']:first-of-type {
   background-image: url(location/location.svg);
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-right: 1rem;
 }
-.location .location__info input[type='button']:nth-of-type(2) {
+.location .location__info div input[type='button']:nth-of-type(2) {
   background-image: url(location/marker-icon.png);
-  background-size: 77%;
+  background-size: 67%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 .location__info_address {
   font-family: LatoBlack;
-  font-size: 0.67rem;
+  font-size: 0.694rem;
   text-transform: uppercase;
-  margin-right: 11.33rem;
+  word-spacing: 0.053rem;
+  letter-spacing: 0.04rem;
 }
 .calendar {
   display: inline-block;
@@ -1256,8 +1262,8 @@ input[type=range]::-ms-tooltip {
   color: #fff;
   font-family: LatoLight;
   font-size: 1.33rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
+  height: 2.36rem;
+  line-height: 2.36rem;
 }
 .calendar .calendar__content .clndr-controls .clndr-next-button,
 .calendar .calendar__content .clndr-controls .clndr-previous-button {
@@ -1317,7 +1323,7 @@ input[type=range]::-ms-tooltip {
   height: 2.72rem;
   line-height: 2.72rem;
   position: absolute;
-  top: 85.6%;
+  top: 84.5%;
   width: 14.51rem;
   border-radius: 0 0 0.2rem 0.2rem;
 }
@@ -1346,8 +1352,8 @@ input[type=range]::-ms-tooltip {
   content: '';
   display: block;
   position: absolute;
-  left: 50%;
-  top: 100%;
+  left: 47%;
+  top: 96.5%;
   margin-top: -2.335rem;
   margin-left: -2.335rem;
   width: 4.67rem;
@@ -1364,7 +1370,7 @@ input[type=range]::-ms-tooltip {
   font-family: SourceSansProLight;
   font-size: 1.89rem;
   color: #fff;
-  line-height: 4.56rem;
+  line-height: 4.2rem;
   height: 70.15%;
   border-radius: 0.2rem 0.2rem 0 0;
   background: #4eb7a8;
@@ -1499,6 +1505,7 @@ input[type=range]::-ms-tooltip {
   font-family: LatoBold;
   text-align: left;
   font-size: 0.72rem;
+  line-height: 0.88rem;
   color: #8e8d8d;
 }
 .messaging__block__body_second-sending-msg {
