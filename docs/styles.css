@@ -1399,12 +1399,13 @@ input[type=range]::-ms-tooltip {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.67rem;
-  width: 13.5rem;
-  height: 1.78rem;
+  width: 13.4rem;
+  height: 1.67rem;
   border-radius: 0.2rem;
   background: #4eb7a8;
   border: none;
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
+  line-height: 1.8rem;
   margin-bottom: 1.61rem;
 }
 .messaging__block__body button:hover {
@@ -1506,17 +1507,18 @@ input[type=range]::-ms-tooltip {
   text-align: left;
   font-size: 0.72rem;
   line-height: 0.88rem;
+  word-spacing: 0.14rem;
   color: #8e8d8d;
 }
 .messaging__block__body_second-sending-msg {
-  margin: auto auto 0.78rem;
+  margin: auto auto 0.93rem;
   box-shadow: inset 0 0 0 0.167rem #fff;
 }
 .messaging__block__body_second-sending-msg p {
   margin-bottom: 1rem;
 }
 .video h1 {
-  margin: 2.78rem auto 1.278rem auto;
+  margin: 2.84rem auto 1.278rem auto;
 }
 .video iframe {
   width: 33rem;
