@@ -127,11 +127,25 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   font-family: SourceSansProLight;
   src: url(fonts/SourceSansPro/SourceSansProLight.ttf), url(fonts/SourceSansPro/SourceSansProLight.svg), url(fonts/SourceSansPro/SourceSansProLight.woff);
 }
-html {
-  font-size: 18px;
+@media only screen and (min-width: 1280px) and (max-width: 1679px) {
+  html {
+    width: 100%;
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1279px) {
+  html {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 699px) {
+  html {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 body {
-  width: 38.89rem;
   margin: 0 auto;
   text-align: center;
   font-family: LatoBlack;
