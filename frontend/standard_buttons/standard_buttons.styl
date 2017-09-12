@@ -3,14 +3,10 @@
 .standard-buttons
   & h1
     margin 4.52rem auto 3.2rem auto
-  & ul
-    display table-row
-  & li
-    display table-cell
-    vertical-align bottom
+
 
 .standard-buttons__table
-  display table
+  width 27.15rem
   text-align center
   border-collapse collapse
   border-width 0
@@ -19,30 +15,31 @@
     width 4.15rem
     height 1.05rem
     font-size 0.56rem
-  & ul li button
+  & button
     button-appearance 6.4rem 1.62rem 0.67rem #ffffff
     margin 0.69rem 0.75rem
     font-family LatoBlack
 
-.standard-buttons
-  & li:first-of-type button
-  & li:nth-of-type(2) button
-    background-color first-color
-    button-shadow 0.2rem first-border-color
-    &:hover
-      color first-color
-    &:active
+.standard-buttons__table
+  & button
+    &:nth-of-type(4n - 3)
+    &:nth-of-type(4n - 2)
       background-color first-color
-      color #ffffff
-  & li:last-of-type button
-  & li:nth-of-type(3) button
-    background-color second-color
-    button-shadow 0.2rem second-border-color
-    &:hover
-      color second-color
-    &:active
+      button-shadow 0.2rem first-border-color
+      &:hover
+        color first-color
+      &:active
+        background-color first-color
+        color #ffffff
+    &:nth-of-type(4n)//
+    &:nth-of-type(4n-1)
       background-color second-color
-      color #ffffff
+      button-shadow 0.2rem second-border-color
+      &:hover
+        color second-color
+      &:active
+        background-color second-color
+        color #ffffff
 
 
 

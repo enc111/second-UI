@@ -127,6 +127,12 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   font-family: SourceSansProLight;
   src: url(fonts/SourceSansPro/SourceSansProLight.ttf), url(fonts/SourceSansPro/SourceSansProLight.svg), url(fonts/SourceSansPro/SourceSansProLight.woff);
 }
+@media only screen and (min-width: 1680px) and (max-width: 1920px) {
+  html {
+    width: 100%;
+    font-size: 25px;
+  }
+}
 @media only screen and (min-width: 1280px) and (max-width: 1679px) {
   html {
     width: 100%;
@@ -137,12 +143,60 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   html {
     width: 100%;
     font-size: 18px;
+    background: #adff2f;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 699px) {
   html {
     width: 100%;
     font-size: 16px;
+    background: #808080;
+  }
+}
+@media only screen and (min-width: 330px) and (max-width: 479px) {
+  html {
+    font-size: 14px;
+    width: 100%;
+  }
+  body {
+    max-width: 100%;
+    background: #ff0;
+  }
+  body > div {
+    width: 100%;
+  }
+  .calendar,
+  .search {
+    margin-right: auto !important;
+  }
+  .calendar > div,
+  .search > div {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+@media only screen and (min-width: 250px) and (max-width: 329px) {
+  html {
+    font-size: 14px;
+    width: 100%;
+    background: #add8e6;
+  }
+  *:not(.slider__ruler_number) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (max-width: 249px) {
+  html {
+    font-size: 14px;
+    width: 100%;
+  }
+  * {
+    max-width: none;
+  }
+  *:not(.slider__ruler_number) {
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 body {
@@ -154,6 +208,7 @@ body > div:last-of-type {
   padding-bottom: 6.056rem;
 }
 * {
+  max-width: 100%;
   border: none;
   margin: 0;
   padding: 0;
@@ -180,15 +235,8 @@ h2 {
 .standard-buttons h1 {
   margin: 4.52rem auto 3.2rem auto;
 }
-.standard-buttons ul {
-  display: table-row;
-}
-.standard-buttons li {
-  display: table-cell;
-  vertical-align: bottom;
-}
 .standard-buttons__table {
-  display: table;
+  width: 27.15rem;
   text-align: center;
   border-collapse: collapse;
   border-width: 0;
@@ -199,7 +247,7 @@ h2 {
   height: 1.05rem;
   font-size: 0.56rem;
 }
-.standard-buttons__table ul li button {
+.standard-buttons__table button {
   overflow: hidden;
   color: #fff;
   text-transform: uppercase;
@@ -213,42 +261,42 @@ h2 {
   margin: 0.69rem 0.75rem;
   font-family: LatoBlack;
 }
-.standard-buttons__table ul li button:hover {
+.standard-buttons__table button:hover {
   background: #fff;
   color: none;
 }
-.standard-buttons__table ul li button:active {
+.standard-buttons__table button:active {
   box-shadow: none;
   border: none;
   cursor: pointer;
   color: #fff;
   background: none;
 }
-.standard-buttons li:first-of-type button,
-.standard-buttons li:nth-of-type(2) button {
+.standard-buttons__table button:nth-of-type(4n - 3),
+.standard-buttons__table button:nth-of-type(4n - 2) {
   background-color: #4eb7a8;
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
 }
-.standard-buttons li:first-of-type button:hover,
-.standard-buttons li:nth-of-type(2) button:hover {
+.standard-buttons__table button:nth-of-type(4n - 3):hover,
+.standard-buttons__table button:nth-of-type(4n - 2):hover {
   color: #4eb7a8;
 }
-.standard-buttons li:first-of-type button:active,
-.standard-buttons li:nth-of-type(2) button:active {
+.standard-buttons__table button:nth-of-type(4n - 3):active,
+.standard-buttons__table button:nth-of-type(4n - 2):active {
   background-color: #4eb7a8;
   color: #fff;
 }
-.standard-buttons li:last-of-type button,
-.standard-buttons li:nth-of-type(3) button {
+.standard-buttons__table button:nth-of-type(4n),
+.standard-buttons__table button:nth-of-type(4n-1) {
   background-color: #e75735;
   box-shadow: 0 0 0 1px #bf3e1f, 0 0.2rem 0 1px #bf3e1f;
 }
-.standard-buttons li:last-of-type button:hover,
-.standard-buttons li:nth-of-type(3) button:hover {
+.standard-buttons__table button:nth-of-type(4n):hover,
+.standard-buttons__table button:nth-of-type(4n-1):hover {
   color: #e75735;
 }
-.standard-buttons li:last-of-type button:active,
-.standard-buttons li:nth-of-type(3) button:active {
+.standard-buttons__table button:nth-of-type(4n):active,
+.standard-buttons__table button:nth-of-type(4n-1):active {
   background-color: #e75735;
   color: #fff;
 }
@@ -347,7 +395,11 @@ h2 {
   height: 5.4rem;
   margin: 0 auto 0 0 0;
 }
+.percentages_multi-pie-chart > * {
+  max-width: none;
+}
 .percentages_multi-pie-chart div {
+  max-width: none;
   position: absolute;
   padding: 0;
   width: 6rem;
@@ -357,6 +409,7 @@ h2 {
   left: -0.35rem;
 }
 #multi {
+  max-width: none;
   margin: 0;
   padding: 0;
 }
@@ -525,6 +578,7 @@ input[type=range]::-ms-tooltip {
 }
 #steps {
   width: 33.33rem;
+  max-width: 100%;
   margin: 0 auto;
   margin-right: auto;
 }
@@ -662,7 +716,7 @@ input[type=range]::-ms-tooltip {
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
   margin-bottom: 0.3rem;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .form-elements__form_submit:hover {
   background: #fff;
@@ -776,6 +830,7 @@ input[type=range]::-ms-tooltip {
 .search {
   display: inline-block;
   margin-right: 2rem;
+  text-align: center;
 }
 .search h1 {
   margin: 3.5rem auto 1.1rem auto;
@@ -841,6 +896,9 @@ input[type=range]::-ms-tooltip {
 }
 .search__form,
 .search__dropdown-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 16rem;
   position: relative;
 }
 .search__form_not-found {
@@ -1250,6 +1308,7 @@ input[type=range]::-ms-tooltip {
   letter-spacing: 0.04rem;
 }
 .calendar {
+  margin-left: auto;
   display: inline-block;
   margin-right: 1.5rem;
 }
@@ -1259,6 +1318,7 @@ input[type=range]::-ms-tooltip {
 .calendar .calendar__day-header {
   border-radius: 0.2rem 0.2rem 0 0;
   height: 6.056rem;
+  max-width: 15.56rem;
   line-height: 6.056rem;
   font-family: LatoLight;
   font-size: 4.44rem;
@@ -1286,7 +1346,7 @@ input[type=range]::-ms-tooltip {
   font-size: 1.4rem;
 }
 .calendar .calendar__content .clndr-controls .month {
-  width: 11.115rem;
+  width: 11.11rem;
 }
 .calendar .calendar__content .clndr-grid {
   width: 100%;
@@ -1354,6 +1414,7 @@ input[type=range]::-ms-tooltip {
 .messaging__block {
   width: 15.94rem;
   height: 23.83rem;
+  margin: auto;
 }
 .messaging__block__header {
   position: relative;

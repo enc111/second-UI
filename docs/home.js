@@ -28636,7 +28636,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
       $.each(opts.steps, function(index, value) {
         var $li = $('<li>').text(value.replace('@', '').replace('~', ''));
-        $li.css('width', (32.45 / (opts.steps.length - 1) - 1.65/opts.steps.length) + 'rem');
+        $li.css('width', (97 / (opts.steps.length - 1) - 4.24/opts.steps.length) + '%');
 
         if(value.indexOf('@') > -1) {
           $li.addClass('current');

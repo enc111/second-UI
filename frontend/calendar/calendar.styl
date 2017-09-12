@@ -1,5 +1,6 @@
 day-width=2.22265rem
 .calendar
+  margin-left auto
   display inline-block
   margin-right 1.5rem
   & h1
@@ -7,6 +8,7 @@ day-width=2.22265rem
   & .calendar__day-header
     border-radius 0.2rem 0.2rem 0 0
     height 6.056rem
+    max-width 15.56rem
     line-height 6.056rem
     font-family LatoLight
     font-size 4.44rem
@@ -30,7 +32,7 @@ day-width=2.22265rem
         font-weight bold
         font-size 1.4rem
       & .month
-        width 11.115rem
+        width 11.11rem
     & .clndr-grid
       width 100%
       background second-color
@@ -64,7 +66,7 @@ day-width=2.22265rem
         & .day.today
           color #ffffff
           background second-color
-    .clndr-today-button
+    & .clndr-today-button
       text-transform uppercase
       font-size 0.72rem
       color input-text-color
