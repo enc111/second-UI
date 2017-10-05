@@ -127,78 +127,6 @@ ul.progressbar li.done:before, ul.progressbar li.done:after {
   font-family: SourceSansProLight;
   src: url(fonts/SourceSansPro/SourceSansProLight.ttf), url(fonts/SourceSansPro/SourceSansProLight.svg), url(fonts/SourceSansPro/SourceSansProLight.woff);
 }
-@media only screen and (min-width: 1680px) and (max-width: 1920px) {
-  html {
-    width: 100%;
-    font-size: 25px;
-  }
-}
-@media only screen and (min-width: 1280px) and (max-width: 1679px) {
-  html {
-    width: 100%;
-    font-size: 23px;
-  }
-}
-@media only screen and (min-width: 700px) and (max-width: 1279px) {
-  html {
-    width: 100%;
-    font-size: 18px;
-    background: #adff2f;
-  }
-}
-@media only screen and (min-width: 480px) and (max-width: 699px) {
-  html {
-    width: 100%;
-    font-size: 16px;
-    background: #808080;
-  }
-}
-@media only screen and (min-width: 330px) and (max-width: 479px) {
-  html {
-    font-size: 14px;
-    width: 100%;
-  }
-  body {
-    max-width: 100%;
-    background: #ff0;
-  }
-  body > div {
-    width: 100%;
-  }
-  .calendar,
-  .search {
-    margin-right: auto !important;
-  }
-  .calendar > div,
-  .search > div {
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-}
-@media only screen and (min-width: 250px) and (max-width: 329px) {
-  html {
-    font-size: 14px;
-    width: 100%;
-    background: #add8e6;
-  }
-  *:not(.slider__ruler_number) {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-@media only screen and (max-width: 249px) {
-  html {
-    font-size: 14px;
-    width: 100%;
-  }
-  * {
-    max-width: none;
-  }
-  *:not(.slider__ruler_number) {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
 body {
   margin: 0 auto;
   text-align: center;
@@ -224,6 +152,75 @@ h2 {
   text-transform: uppercase;
   color: #4f4f4f;
 }
+@media only screen and (min-width: 1680px) and (max-width: 1920px) {
+  html {
+    width: 100%;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1679px) {
+  html {
+    width: 100%;
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1279px) {
+  html {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 699px) {
+  html {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 330px) and (max-width: 479px) {
+  html {
+    font-size: 14px;
+    width: 100%;
+  }
+  body {
+    max-width: 100%;
+  }
+  body > div {
+    width: 100%;
+  }
+  .calendar,
+  .search {
+    margin-right: auto !important;
+  }
+  .calendar > div,
+  .search > div {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+@media only screen and (min-width: 250px) and (max-width: 329px) {
+  html {
+    font-size: 14px;
+    width: 100%;
+  }
+  *:not(.slider__ruler_number) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media only screen and (max-width: 249px) {
+  html {
+    font-size: 14px;
+    width: 100%;
+    min-width: 250px;
+  }
+  * {
+    max-width: 250px;
+  }
+  *:not(.slider__ruler_number) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
 .ripple-effect {
   position: absolute;
   border-radius: 50%;
@@ -236,7 +233,6 @@ h2 {
   margin: 4.52rem auto 3.2rem auto;
 }
 .standard-buttons__table {
-  width: 27.15rem;
   text-align: center;
   border-collapse: collapse;
   border-width: 0;
@@ -260,13 +256,14 @@ h2 {
   border: none;
   margin: 0.69rem 0.75rem;
   font-family: LatoBlack;
+  vertical-align: bottom;
 }
 .standard-buttons__table button:hover {
-  background: #fff;
+  background: #fff !important;
   color: none;
 }
 .standard-buttons__table button:active {
-  box-shadow: none;
+  box-shadow: none !important;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -283,7 +280,7 @@ h2 {
 }
 .standard-buttons__table button:nth-of-type(4n - 3):active,
 .standard-buttons__table button:nth-of-type(4n - 2):active {
-  background-color: #4eb7a8;
+  background-color: #4eb7a8 !important;
   color: #fff;
 }
 .standard-buttons__table button:nth-of-type(4n),
@@ -297,7 +294,7 @@ h2 {
 }
 .standard-buttons__table button:nth-of-type(4n):active,
 .standard-buttons__table button:nth-of-type(4n-1):active {
-  background-color: #e75735;
+  background-color: #e75735 !important;
   color: #fff;
 }
 .arrow-buttons h1 {
@@ -719,11 +716,11 @@ input[type=range]::-ms-tooltip {
   margin-right: 0 !important;
 }
 .form-elements__form_submit:hover {
-  background: #fff;
+  background: #fff !important;
   color: #4eb7a8;
 }
 .form-elements__form_submit:active {
-  box-shadow: none;
+  box-shadow: none !important;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -1218,11 +1215,11 @@ input[type=range]::-ms-tooltip {
   box-shadow: 0 0 0 1px #28a290, 0 0.2rem 0 1px #28a290;
 }
 .news-events__second button:hover {
-  background: #fff;
+  background: #fff !important;
   color: #4eb7a8;
 }
 .news-events__second button:active {
-  box-shadow: none;
+  box-shadow: none !important;
   border: none;
   cursor: pointer;
   color: #fff;
@@ -1484,11 +1481,11 @@ input[type=range]::-ms-tooltip {
   margin-bottom: 1.61rem;
 }
 .messaging__block__body button:hover {
-  background: #fff;
+  background: #fff !important;
   color: #4eb7a8;
 }
 .messaging__block__body button:active {
-  box-shadow: none;
+  box-shadow: none !important;
   border: none;
   cursor: pointer;
   color: #fff;

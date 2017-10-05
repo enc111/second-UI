@@ -61,70 +61,12 @@ background-icon(path, n = 60%)
   background-position 50% 50%
   background-repeat no-repeat
 
-@media only screen and (min-width: 1680px) and (max-width: 1920px)
-  html
-    width 100%
-    font-size 25px
-
-@media only screen and (min-width: 1280px) and (max-width: 1679px)
-  html
-    width 100%
-    font-size 23px
-
-@media only screen and (min-width: 700px) and (max-width: 1279px)
-  html
-    width 100%
-    font-size 18px
-    background greenyellow
-
-@media only screen and (min-width: 480px) and (max-width: 699px)
-  html
-    width 100%
-    font-size 16px
-    background grey
-
-@media only screen and (min-width: 330px) and (max-width: 479px)
-  html
-    font-size 14px
-    width 100%
-  body
-    max-width 100%
-    background yellow
-    & > div
-      width 100%// margin-right 0 !important
-  .calendar
-  .search
-    margin-right auto !important
-    > div
-      margin-right auto !important
-      margin-left auto !important
-
-@media only screen and (min-width: 250px) and (max-width: 329px)
-  html
-    font-size 14px
-    width 100%
-    background lightblue
-  *:not(.slider__ruler_number)
-    margin-left auto !important
-    margin-right auto !important
-
-@media only screen and (max-width: 249px)
-  html
-    font-size 14px
-    width 100%
-  *
-    max-width none
-    &:not(.slider__ruler_number)
-      margin-left auto !important
-      margin-right auto !important
-
 body//  width 38.89rem//  heigth 187.22rem
   margin 0 auto
   text-align center
   font-family LatoBlack
   & > div:last-of-type
     padding-bottom 6.056rem
-
 *
   max-width 100%
   border none
@@ -141,6 +83,60 @@ h2
   text-transform uppercase
   color header-color
 
+@media only screen and (min-width: 1680px) and (max-width: 1920px)
+  html
+    width 100%
+    font-size 25px
+
+@media only screen and (min-width: 1280px) and (max-width: 1679px)
+  html
+    width 100%
+    font-size 23px
+
+@media only screen and (min-width: 700px) and (max-width: 1279px)
+  html
+    width 100%
+    font-size 18px
+
+@media only screen and (min-width: 480px) and (max-width: 699px)
+  html
+    width 100%
+    font-size 16px
+
+@media only screen and (min-width: 330px) and (max-width: 479px)
+  html
+    font-size 14px
+    width 100%
+  body
+    max-width 100%
+    & > div
+      width 100%// margin-right 0 !important
+  .calendar
+  .search
+    margin-right auto !important
+    > div
+      margin-right auto !important
+      margin-left auto !important
+
+@media only screen and (min-width: 250px) and (max-width: 329px)
+  html
+    font-size 14px
+    width 100%
+  *:not(.slider__ruler_number)
+    margin-left auto !important
+    margin-right auto !important
+
+@media only screen and (max-width: 249px)
+  html
+    font-size 14px
+    width 100%
+    min-width 250px
+  *
+    max-width 250px
+    &:not(.slider__ruler_number)
+      margin-left auto !important
+      margin-right auto !important
+
 .ripple-effect
   position absolute
   border-radius 50%
@@ -156,6 +152,7 @@ h2
   to
     transform scale(2)
     opacity 0
+
 @import "vendor/jquery.circlicful.css"
 @import "vendor/jquery.progressbar.css"
 
